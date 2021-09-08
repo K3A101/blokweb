@@ -41,11 +41,15 @@ Website heet Wattpad en de link: https://www.wattpad.com/home
 Wattpad is een online bibliotheek waar verschillende mensen fan ficties kan lezen en schrijven. Het is ook een hulpmiddel voor schrijvers die hun vaardigheid wil verbeteren.
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Je bibliotheek  
-<img src="images/screenshot-je-bibliotheek-wattpad.jpg" width="375px" alt="In je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.">
+Je bibliotheek 
+In je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.
+ 
+<img src="images/screenshot-je-bibliotheek-wattpad.jpg" width="375px" alt="OmscIn je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Detailpagina van een boek 
+Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect.
+
 <img src="images/detailpagina-wattpad.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
  
 </details>
@@ -60,6 +64,7 @@ Detailpagina van een boek
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
+Versie 1:
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
