@@ -3,3 +3,96 @@
   box-sizing:border-box;  
 }
 
+:root {
+  --main-orange-color: #FF500A;
+  --background-color: #fefefe;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+/* 
+ header {
+
+ } */
+
+ header:nth-of-type(1) {
+
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
+
+
+}
+
+/* .gg-search {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  border-radius: 100%;
+  margin-left: -4px;
+  margin-top: -4px
+ }
+ 
+ .gg-search::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 12px
+ }  */
+
+header:first-of-type nav ul {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+margin: 0;
+} 
+
+header:first-of-type nav ul li {
+  display: flex;
+   
+ list-style: none;
+ flex-grow: 1;
+}
+
+/* De directe kind van de ul  */
+header:first-of-type nav ul > li  {
+  display: flex;
+  align-items: center;
+
+}
+/* De directe kind van de ul met daarin de  image */
+header:first-of-type nav ul > li img:first-of-type {
+  width: 100%;
+  max-width: 50px;
+  
+}
+
+
+header:first-of-type nav ul li a {
+  
+  background-color: var(--background-color);
+  font-weight: 600;
+  padding: 1em;
+
+  font-size: 16px;
+
+ color: black;
+
+  text-decoration: none;
+
+  list-style: none;
+ }
+
+
+ 

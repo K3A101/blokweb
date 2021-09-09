@@ -64,8 +64,17 @@ Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatt
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-Versie 1:
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+#### Versie 1:
+Hier is mijn eerste versie van het breakdownschets. 
+
+##### Overzichtpagina van Wattpad.
+Het overzichtpagina  die ik wil nameken  is het bibliotheek pagina, waar gebruikers hun boeken kan opslagen  en terugvinden. 
+Deze pagina bevat uit een navigatie menus, met afbeeldingen die alllemaal links zijn. 
+<img src="images/library.jpg" width="375px" alt="breakdown van de hele pagina">
+
+##### Detailpagina van Wattpad.
+De andere pagina bevat alle detail van het boek  die veel secties bevatten. 
+<img src="images/detailpagina-schets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
