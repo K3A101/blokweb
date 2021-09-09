@@ -23,7 +23,12 @@ Keisha Alexander
 
 #### Je focus:
 surface plane
-Onderwerpen: Dark/light mode, animaties (loading ect), states van websites, lettergrootte kunnen instellen, svg icon stylen en animeren,
+Onderwerpen: 
+ - Dark/light mode, 
+ - animaties (loading ect) 
+ - states van websites 
+ - lettergrootte kunnen instellen, 
+ - svg icon stylen en animeren,
  
 </details>
 
