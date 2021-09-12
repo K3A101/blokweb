@@ -23,12 +23,7 @@ Keisha Alexander
 
 #### Je focus:
 surface plane
-Onderwerpen: 
- - Dark/light mode, 
- - animaties (loading ect) 
- - states van websites 
- - lettergrootte kunnen instellen, 
- - svg icon stylen en animeren,
+Onderwerpen: Dark/light mode, animaties (loading ect), states van websites, lettergrootte kunnen instellen, svg icon stylen en animeren,
  
 </details>
 
@@ -49,13 +44,21 @@ Wattpad is een online bibliotheek waar verschillende mensen fan ficties kan leze
 Je bibliotheek 
 In je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.
  
-<img src="images/screenshot-je-bibliotheek-wattpad.jpg" width="375px" alt="OmscIn je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.">
+<img src="images/bibliotheek-overzichtpagina.jpg" width="375px" alt="Je bibliotheek pagina kan je jouw favoriete boeken opslagen. Je kan ze archiveren en ook downloaden om offline te lezen. Het pagina bestaat uit de kaft van de boek en de boektitel. Ook krijg een melding dat het boek een nieuwe hoofdstuk. Verder kun je boeken groeperen.">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Detailpagina van een boek 
-Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect.
+Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. De screenshots van de tweede pagina bestaat uit 3 delen. 
 
-<img src="images/detailpagina-wattpad.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
+##### Deel 1: Algemene informatie van het boek:
+
+<img src="images/algemene-info-van-boek.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
+
+##### Deel 2: Samenvatting van het boek:
+<img src="images/samenvating-deel.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
+
+##### Deel 3: Inhoudsopgave van het boek:
+<img src="images/inhoudsopgave-van-het-boek.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
  
 </details>
 
@@ -64,11 +67,12 @@ Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatt
 
 
 ## Breakdownschets (week 1)
+Deze week he
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary>Uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
+### De hele pagina: 
 #### Versie 1:
 Hier is mijn eerste versie van het breakdownschets. 
 
@@ -76,13 +80,15 @@ Hier is mijn eerste versie van het breakdownschets.
 Het overzichtpagina  die ik wil nameken  is het bibliotheek pagina, waar gebruikers hun boeken kan opslagen  en terugvinden. 
 Deze pagina bevat uit een navigatie menus, met afbeeldingen die alllemaal links zijn. 
 <img src="images/library.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown-schets-hele-pagina.png" width="375px" alt="breakdown van de hele pagina">
 
 ##### Detailpagina van Wattpad.
 De andere pagina bevat alle detail van het boek  die veel secties bevatten. 
 <img src="images/detailpagina-schets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdownschets-menu" width="375px" alt="breakdown van een dynamisch deel">
+
 
 ### wellicht nog een dynamisch deel (bijv filter): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">

@@ -51,11 +51,14 @@ box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
   left: 12px
  }  */
 
+
+ 
 header:first-of-type nav ul {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-evenly;
 margin: 0;
+ padding: 0 0.5em 0 0;
 } 
 
 header:first-of-type nav ul li {
@@ -73,7 +76,7 @@ header:first-of-type nav ul > li  {
 }
 /* De directe kind van de ul met daarin de  image */
 header:first-of-type nav ul > li img:first-of-type {
-  width: 100%;
+  width: 100vh;
   max-width: 50px;
   
 }
@@ -94,5 +97,62 @@ header:first-of-type nav ul li a {
   list-style: none;
  }
 
+ /* ----------------main------------------------- */
+/* Hier komt de stijlen voor het main elementen  van pagina 1 */
+ /* ----------------main------------------------- */
+
+ main {
+   margin: 2em;
+ }
+
+ main li {
+   list-style: none;
+ }
+
+ main section:nth-of-type(1) nav ul   {
+ display: flex;
+   justify-content: flex-start;
+   gap: 0.5em;
+ }
+
+
+ main section:nth-of-type(1) nav ul li  {
+   list-style: none;
+   display: flex;
+   
+
+ }
+
+ 
+
+ main section:nth-of-type(1) nav ul li a {
+   text-align: left;
+   display: block;
+   text-decoration: none;
+   line-height: 50px;
+   font-size: 16px;
+   padding: 5px;
+   flex-grow: 1;
+   
+
+ }
+ main:nth-of-type(2) nav ul {
+   display: flex;
+ flex-direction: column;
+ 
+   
+ }
+
+ main section:nth-of-type(2) nav ul li  a figure {
+  display: inline;
+ }
+
+main section:nth-of-type(2) nav ul li  a figure img {
+   width: 50vh;
+
+   min-width:100px;
+   max-width: 200px;
+  
+ }
 
  
