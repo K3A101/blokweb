@@ -58,7 +58,7 @@ Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatt
 <img src="images/samenvating-deel.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
 
 ##### Deel 3: Inhoudsopgave van het boek:
-<img src="images/inhoudsopgave-van-het-boek.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
+<img src="images/inhoudsopgave-van-boek.jpg" width="375px" alt="Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatting, auteur van het boek,titel van het boek en andere suggesties ect. ">
  
 </details>
 
@@ -67,8 +67,8 @@ Als je een boek kiest krijg je uitgebreide details van het boek. Zoals samenvatt
 
 
 ## Breakdownschets (week 1)
-Deze week he
-
+Deze week heb ik enkele breakdownschets gemaakt die 
+noodzakelijk zijn voor maken van het HTML pagina. 
 <details>
 <summary>Uitwerken na afloop 2e werkgroep</summary>
 
@@ -87,7 +87,7 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 <img src="images/detailpagina-schets.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/breakdownschets-menu" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdownschets-menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 
 ### wellicht nog een dynamisch deel (bijv filter): 
