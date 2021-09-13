@@ -1,8 +1,11 @@
 /* CSS Document */
-*, *::after, *::before {
+*, *::after, *::before, html {
   box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
 }
 
+/* Algemen stijlen voor de hele pagina */
 :root {
   --main-orange-color: #FF500A;
   --background-color: #fefefe;
@@ -11,15 +14,281 @@
 body {
   font-family: 'Barlow', sans-serif;
   margin: 0;
+
+  
 }
-/* 
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ------------------------- */
+/* Hier begin de stijlen voor de header voor beide pagina */
+
+header {
+  position: relative;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header nav {
+  background-color: rgb(253, 239, 203);
+  padding: 1em;
+}
+
+header ul {
+ 
+  display: flex;
+  /* justify-content:space-evenly; */
+  flex-flow:  wrap;
+  justify-content: center;
+   gap: 20px;
+}
+
+/* .gebruiker-foto {
+  position: absolute;
+  top: 30px;
+  right:50px;
+} */
+
+
+
+header a {
+  
+  font-size: 19px;
+  width: 100%;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 600;
+  padding: .5em;
+
+  font-size: 16px;
+
+ color: black;
+ cursor: pointer;
+ transition: 0.2s ease-in-out;
+
+
+}
+
+header nav a:hover {
+   background-color: rgb(255, 245, 220);
+   
+}
+
+
+ header nav a:active,  header nav a:focus {
+border-bottom: 3px solid var(--main-orange-color);
+font-size: 25px;
+
+}
+
+header .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+header .logo-link {
+  font-size: 20px;
+  color: var(--main-orange-color);
+ 
+}
+
+ 
+/* header:first-of-type  {
+
+} */
+
+
+header:first-of-type  img:first-of-type {
+  width: 55px;
+min-width: 50px;
+max-width: 75px;
+
+/* position: absolute;
+top: 0;
+left: 0; */
+
+}
+
+figure {
+  position: relative;
+}
+
+figure img {
+  margin:1em 0.5em;
+  width: 55px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
+  position:absolute ;
+  right: 20px;
+  transform: translateX( .5em);
+  border-radius: 40px;
+
+
+}
+
+/* ---------------- */
+
+/* Hier begin het stijlen voor de content binnen de main HTML */
+/* Onderaan staan de stijlen voor de eerste pagina  */
+main:first-of-type {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+main:first-of-type ul {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+main:first-of-type li {
+  display: flex;
+  flex-wrap: wrap;
+ 
+ 
+}
+
+main:first-of-type section img {
+width: 100%;
+max-width: 300px;
+min-width: 200px
+}
+
+
+
+  main h1:first-of-type{ 
+    background: var(--main-orange-color); 
+   position: static;
+   text-align: center;
+   
+   line-height: 2em;
+   background-image: linear-gradient(var(--main-orange-color),rgba(255, 80, 10, 0.5));
+   color: white;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+   border-radius: 20px;
+   width: 100%;
+   min-width: 200px;
+   
+ } 
+
+main:first-of-type section:nth-of-type(1) nav {
+  margin: 2em 0;
+}
+
+main:first-of-type section:nth-of-type(1) ul {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+gap: 5px;
+border-bottom: 1px solid rgb(190, 190, 190);
+border-top: 1px solid rgb(190, 190, 190);
+
+}
+
+main:first-of-type section:nth-of-type(1) li {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+
+main:first-of-type section:nth-of-type(1) a {
+  line-height: 1.5em;
+  font-size: 17px;
+  width: 100%;
+  color: #000000;
+  font-weight: 600;
+  min-width: 14px;
+  
+  padding:1em 0.2em;
+  transition: 0.5s;
+ }
+
+ main:first-of-type section:nth-of-type(1) a:active, main:first-of-type section:nth-of-type(1) a:focus {
+  border-bottom: 3px solid rgb(190, 190, 190);
+  font-size: 19px;
+
+ }
+ 
+
+main:first-of-type section:nth-of-type(2) ul {
+gap: 5em;
+}
+/* --------Footer------------------ */
+footer {
+  background-color: rgb(228, 228, 228);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* 
  header {
 
  } */
 
- header:nth-of-type(1) {
+ /* header:nth-of-type(1) {
+   width: 100vw;
 
-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
 position:-webkit-sticky;
 
 position: sticky;
@@ -28,36 +297,11 @@ z-index: 1;
 background-color: white;
 
 }
-
-/* .gg-search {
-  box-sizing: border-box;
-  position: relative;
-  display: block;
-  transform: scale(var(--ggs,1));
-  width: 16px;
-  height: 16px;
-  border: 2px solid;
-  border-radius: 100%;
-  margin-left: -4px;
-  margin-top: -4px
- }
- 
- .gg-search::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  position: absolute;
-  border-radius: 3px;
-  width: 2px;
-  height: 8px;
-  background: currentColor;
-  transform: rotate(-45deg);
-  top: 10px;
-  left: 12px
- }  */
+ */
 
 
- 
+
+/*  
 header:first-of-type nav ul {
  display: flex;
  flex-wrap: wrap;
@@ -74,20 +318,22 @@ header:first-of-type nav ul li {
 }
 
 /* De directe kind van de ul  */
-header:first-of-type nav ul > li  {
+/* header:first-of-type nav ul > li  {
   display: flex;
-  align-items: center;
+  align-items: center; */
 
-}
+/* } */
 /* De directe kind van de ul met daarin de  image */
-header:first-of-type nav ul > li img:first-of-type {
+/* header:first-of-type nav ul > li img:first-of-type {
   width: 100vh;
   max-width: 50px;
-  
-}
+   */
+/* } */
 
 
-header:first-of-type nav ul li a {
+/* header:first-of-type nav ul li a {
+  width: 100%;
+  max-width:500px;
   
   background-color: var(--background-color);
   font-weight: 600;
@@ -100,17 +346,17 @@ header:first-of-type nav ul li a {
   text-decoration: none;
 
   list-style: none;
- }
+ } */
 
  /* ----------------main------------------------- */
 /* Hier komt de stijlen voor het main elementen  van pagina 1 */
  /* ----------------main------------------------- */
 
- main {
+ /* main {
    margin:0  3em;
- }
+ } */
 
- main li {
+ /* main li {
    list-style: none;
  }
 
@@ -122,11 +368,11 @@ header:first-of-type nav ul li a {
    gap: 0.5em;
    position: relative;
 
- }
+ } */
 
- main section:nth-of-type(1) h1:first-of-type{
+ /* main section:nth-of-type(1) h1:first-of-type{ */
    /* background: var(--main-orange-color); */
-   position: fixed;
+   /* position: fixed;
    text-align: center;
    left: -20px;
    top: 0;
@@ -138,9 +384,10 @@ header:first-of-type nav ul li a {
    color: white;
    letter-spacing: 10px;
    text-transform: uppercase;
- }
+   
+ } */
 
- main section:nth-of-type(1) nav ul li  {
+ /* main section:nth-of-type(1) nav ul li  {
    list-style: none;
    display: flex;
  
@@ -153,10 +400,12 @@ header:first-of-type nav ul li a {
    right: 0;
    bottom: 0;
    
- }
+ } */
  
-
+/* 
  main section:nth-of-type(1) nav ul li a {
+   width: 30vw;
+   max-width: 400px;
    text-align: left;
    display: block;
    text-decoration: none;
@@ -184,10 +433,10 @@ header:first-of-type nav ul li a {
  
 
 main section:nth-of-type(2) nav ul li  a  img {
-   width: 80%;
-   
+   width: 100%;
+   max-width: 300px
    
   
- }
+ } */
 
- 
+  
