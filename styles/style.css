@@ -20,7 +20,12 @@ body {
  header:nth-of-type(1) {
 
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
+position:-webkit-sticky;
 
+position: sticky;
+top: 0;
+z-index: 1;
+background-color: white;
 
 }
 
@@ -102,27 +107,53 @@ header:first-of-type nav ul li a {
  /* ----------------main------------------------- */
 
  main {
-   margin: 2em;
+   margin:0  3em;
  }
 
  main li {
    list-style: none;
  }
 
+
+
  main section:nth-of-type(1) nav ul   {
  display: flex;
    justify-content: flex-start;
    gap: 0.5em;
+   position: relative;
+
  }
 
+ main section:nth-of-type(1) h1:first-of-type{
+   /* background: var(--main-orange-color); */
+   position: fixed;
+   text-align: center;
+   left: -20px;
+   top: 0;
+
+   bottom: -100px;
+   writing-mode: vertical-lr;
+   line-height: 2em;
+   background-image: linear-gradient(var(--main-orange-color),rgba(255, 80, 10, 0.5));
+   color: white;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+ }
 
  main section:nth-of-type(1) nav ul li  {
    list-style: none;
    display: flex;
+ 
    
 
  }
 
+ main section:nth-of-type(1) nav ul li:last-of-type {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   
+ }
  
 
  main section:nth-of-type(1) nav ul li a {
@@ -136,22 +167,26 @@ header:first-of-type nav ul li a {
    
 
  }
- main:nth-of-type(2) nav ul {
+ main section:nth-of-type(2) nav ul {
    display: flex;
  flex-direction: column;
+ flex-wrap: wrap;
+
  
+ 
+
+ }
+
+ main section:nth-of-type(2) nav ul li {
+   margin:  3em 0;
+ }
+
+ 
+
+main section:nth-of-type(2) nav ul li  a  img {
+   width: 80%;
    
- }
-
- main section:nth-of-type(2) nav ul li  a figure {
-  display: inline;
- }
-
-main section:nth-of-type(2) nav ul li  a figure img {
-   width: 50vh;
-
-   min-width:100px;
-   max-width: 200px;
+   
   
  }
 
