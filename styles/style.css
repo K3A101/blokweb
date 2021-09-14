@@ -9,7 +9,11 @@
 :root {
   --main-orange-color: #FF500A;
   --background-color: #fefefe;
+  --button-color: #2a1c60;
 }
+
+
+
 
 body {
   font-family: 'Barlow', sans-serif;
@@ -125,7 +129,7 @@ figure {
   position: relative;
 }
 
-figure img {
+figure:nth-of-type(1) img {
   margin:1em 0.5em;
   width: 55px;
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
@@ -141,7 +145,7 @@ figure img {
 
 /* Hier begin het stijlen voor de content binnen de main HTML */
 /* Onderaan staan de stijlen voor de eerste pagina  */
-main:first-of-type {
+.main-first-page {
   display: flex;
   justify-content: center;
   margin: 3em;
@@ -150,20 +154,20 @@ main:first-of-type {
 
 }
 
-main:first-of-type ul {
+.main-first-page ul {
   display: flex;
   flex-wrap: wrap;
   
 }
 
-main:first-of-type li {
+.main-first-page li {
   display: flex;
   flex-wrap: wrap;
  
  
 }
 
-main:first-of-type section img {
+.main-first-page section img {
 width: 100%;
 max-width: 300px;
 min-width: 200px
@@ -171,7 +175,7 @@ min-width: 200px
 
 
 
-  main h1:first-of-type{ 
+.main-first-page h1:first-of-type{ 
     background: var(--main-orange-color); 
    position: static;
    text-align: center;
@@ -187,11 +191,11 @@ min-width: 200px
    
  } 
 
-main:first-of-type section:nth-of-type(1) nav {
+.main-first-page section:nth-of-type(1) nav {
   margin: 2em 0;
 }
 
-main:first-of-type section:nth-of-type(1) ul {
+.main-first-page section:nth-of-type(1) ul {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-evenly;
@@ -201,7 +205,7 @@ border-top: 1px solid rgb(190, 190, 190);
 
 }
 
-main:first-of-type section:nth-of-type(1) li {
+.main-first-page section:nth-of-type(1) li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -209,7 +213,7 @@ main:first-of-type section:nth-of-type(1) li {
 }
 
 
-main:first-of-type section:nth-of-type(1) a {
+.main-first-page section:nth-of-type(1) a {
   line-height: 1.5em;
   font-size: 17px;
   width: 100%;
@@ -221,16 +225,209 @@ main:first-of-type section:nth-of-type(1) a {
   transition: 0.5s;
  }
 
- main:first-of-type section:nth-of-type(1) a:active, main:first-of-type section:nth-of-type(1) a:focus {
+ .main-first-page section:nth-of-type(1) a:active, main:first-of-type section:nth-of-type(1) a:focus {
   border-bottom: 3px solid rgb(190, 190, 190);
   font-size: 19px;
 
  }
  
 
-main:first-of-type section:nth-of-type(2) ul {
+.main-first-page section:nth-of-type(2) ul {
 gap: 5em;
 }
+
+
+.main-first-page section:nth-of-type(2) li {
+  position: relative;
+}
+
+.main-first-page section:nth-of-type(2) img {
+   box-shadow: 3px 5px 15px rgb(119, 119, 119);
+}
+
+
+.main-first-page section:nth-of-type(2) h2 {
+
+ position: absolute;
+
+ top: 0;
+ 
+ z-index: 1;
+ 
+ /* background: rgba(0, 0, 0, 0.384); */
+ background-image: linear-gradient(to bottom ,#ff4f0ab7,#ff4f0a33 );
+ writing-mode: vertical-lr;
+ padding: 0.5em;
+ color: rgb(255, 255, 255);
+
+}
+
+.main-first-page section:nth-of-type(2)  p {
+  
+ 
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  padding: 1em;
+  background-color: #2a1c60;
+  color: white;
+  font-weight: 600;
+  font-size: 18px ;
+  text-align: center;
+
+}
+
+
+.main-first-page section:nth-of-type(2) img:last-of-type {
+
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  box-shadow: 0 4px 10px black;
+  min-width: 60px;
+
+  max-width: 100px;
+  border: 4px solid var(--main-orange-color);
+  border-radius: 60px;
+}
+
+
+
+
+
+
+/* -----------------Stijlen op de tweede pagina  */
+.main-second-page {
+  display: flex;
+  justify-content: center;
+  margin: 2em ;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.main-second-page ul {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.main-second-page li {
+  display: flex;
+  flex-wrap: wrap;
+ 
+ 
+}
+
+.main-second-page section {
+  display: flex;
+  margin: 4em 0 ;
+ 
+  flex-direction: column ;
+  position: relative;
+
+  
+}
+
+/* Stijlen voor specifieke section van de pagina  */
+/* de eerste section  -----------------*/
+
+.main-second-page section:first-of-type {
+  background-color: whitesmoke;
+ justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+ margin: 0;
+
+}
+
+.main-second-page section:first-of-type h1 {
+order: -1;
+font-size: 30px;
+width: 100%;
+text-align:center;
+
+
+
+}
+
+
+.main-second-page section:first-of-type a {
+  order: 0;
+}
+
+.main-second-page section:first-of-type img {
+  width: 100%;
+  min-width: 50px;
+  max-width: 300px;
+  border-radius: none;
+  order: 1;
+}
+
+
+
+/*  ---------------------de eerste section------------------ */
+
+
+/* de tweede section------------------------------------ */
+.main-second-page section:nth-of-type(2)  ul {
+  justify-content: space-evenly;
+  
+}
+
+.main-second-page section:nth-of-type(2)  li{
+background-color:rgb(190, 190, 190);
+flex-direction: column-reverse;
+
+
+
+}
+
+
+/* ---------------section 3 --------------- */
+
+.main-second-page section:nth-of-type(3) article {
+padding: 1em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.main-second-page section:nth-of-type(3) article p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.main-second-page section:nth-of-type(3) article p span {
+ display: block;
+ margin: 1.5em 0;
+}
+
+
+
+/* to be continued------- */
+/* de article morgen afmken met stijlen */
+
+
+/* Vierde section------------------------ */
+
+.main-second-page section:nth-of-type(4) ul {
+  flex-direction: row;
+ gap: 10px;
+ justify-content: center;
+ 
+}
+
+.main-second-page section:nth-of-type(4) a {
+ color: rgba(0, 0, 0, 0.959);
+ padding: 0.8em;
+ background-color: rgb(245, 243, 243);
+ border-radius: 35px;
+}
+
+
+
 /* --------Footer------------------ */
 footer {
   background-color: rgb(228, 228, 228);
