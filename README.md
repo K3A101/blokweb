@@ -112,10 +112,10 @@ Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive 
 
 Hier zijn de screenshot van de voortgang van de paginas.
 Pagina 1:
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/detailpagina-home.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 Pagina 2:
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/bibliotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Wat goed ging.
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
@@ -131,10 +131,13 @@ Pagina 2:
 
 ### Agenda voor meeting
 samen met je groepje opstellen
+Mijn Punt 
+- Wat jan ik nog toevoegen in mijn paginas.
+- Een beetje feedback op mij twee paginas.
 
-| student 1  Keisha Alexander    | student 2          | student 3    | student 4        |
-| Wat jan ik nog toevoegen in mijn paginas.           | ---                | ---          | ---              |
-|Een beetje feedback op mij twee paginas.   | en dit             | en ik dit    | en dan ik dat    |
+| student 1      | student 2          | student 3    | student 4        |
+|                | ---                | ---          | ---              |
+|                | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
