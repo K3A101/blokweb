@@ -105,6 +105,10 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
+In het algemeen ben ik wel ver met mijn wweb paginas. Maar ik denk dat ik meer kan toevoegen.
+ 
+ 
+ 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
