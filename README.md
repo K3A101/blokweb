@@ -260,8 +260,12 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. A complete guide to flexbox - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+2. Huisstijl van Wattpad - https://company.wattpad.com/brand-guidelines
+3. Background-images properties -https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
+4. How to create a responsive header - https://www.w3schools.com/howto/howto_css_responsive_header.asp
+5. How to change tabs on Hover - https://www.w3schools.com/howto/howto_js_hover_tabs.asp
+6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
+7. css RGBA values - 
 
 </details>

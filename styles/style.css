@@ -5,21 +5,21 @@
   margin: 0;
 }
 
+
+
 /* Algemen stijlen voor de hele pagina */
 :root {
-  --main-orange-color: #FF500A;
-  --background-color: #fefefe;
   --button-color: #2a1c60;
+  --background-color:#fefefe;
+   --main-orange-color:#FF500A;
 }
 
 
 
 
 body {
-  font-family: 'Barlow', sans-serif;
   margin: 0;
-
-  
+  font-family: 'Barlow', sans-serif;
 }
 
 li {
@@ -29,77 +29,68 @@ li {
 a {
   text-decoration: none;
 }
+
+
+
 /* ------------------------- */
 /* Hier begin de stijlen voor de header voor beide pagina */
+/* ------------------------------------------------- */
+
 
 header {
-  position: relative;
-  background-color: var(--background-color);
+  
   margin: 0;
   padding: 0;
   display: flex;
+  position: relative;
   flex-direction: column;
-  
+  background-color: var(--background-color);
 }
 
+
+
 header nav {
-  background-color: rgb(253, 239, 203);
   padding: 1em;
+  background-color: rgb(253, 239, 203);
 }
 
 header ul {
- 
+  gap: 20px;
   display: flex;
-  /* justify-content:space-evenly; */
   flex-flow:  wrap;
   justify-content: center;
-   gap: 20px;
+  /* justify-content:space-evenly; */
 }
-
-/* .gebruiker-foto {
-  position: absolute;
-  top: 30px;
-  right:50px;
-} */
-
 
 
 header a {
-  
-  font-size: 19px;
   width: 100%;
+  padding: .5em;
+  color: black;
   min-width: 16px;
-  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
   line-height: 1em;
   text-align: center;
-  font-weight: 600;
-  padding: .5em;
-
-  font-size: 16px;
-
- color: black;
- cursor: pointer;
- transition: 0.2s ease-in-out;
-
-
-}
+  transition: 0.2s ease-in-out; 
+ }
 
 header nav a:hover {
+   font-size: 19px;
    background-color: rgb(255, 245, 220);
-   
 }
 
 
  header nav a:active,  header nav a:focus {
-border-bottom: 3px solid var(--main-orange-color);
 font-size: 25px;
-
+border-bottom: 3px solid var(--main-orange-color);
 }
 
 header .logo-container {
   display: flex;
-  justify-content: center;
   align-items: center ;
+  justify-content: center;
 }
 
 header .logo-link {
@@ -108,50 +99,52 @@ header .logo-link {
  
 }
 
- 
-/* header:first-of-type  {
-
-} */
-
 
 header:first-of-type  img:first-of-type {
-  width: 55px;
-min-width: 50px;
+width: 55px;
 max-width: 75px;
-
-/* position: absolute;
-top: 0;
-left: 0; */
+min-width: 50px;
 
 }
+
+
+
+
+/* ***************************** */
+/* Figure is de gebruikers foto */
+/* **************************** */
 
 figure {
   position: relative;
 }
 
 figure:nth-of-type(1) img {
-  margin:1em 0.5em;
-  width: 55px;
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
-  position:absolute ;
-  right: 20px;
-  transform: translateX( .5em);
-  border-radius: 40px;
-
+ right: 20px;
+ width: 55px;
+ margin:1em 0.5em;
+ position:absolute ;
+ border-radius: 40px;
+ transform: translateX( .5em);
+ box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
 
 }
 
-/* ---------------- */
+
+
+
+
+/* ****************************************************** */
 
 /* Hier begin het stijlen voor de content binnen de main HTML */
 /* Onderaan staan de stijlen voor de eerste pagina  */
-.main-first-page {
-  display: flex;
-  justify-content: center;
-  margin: 3em;
-  flex-direction: column;
-  flex-wrap: wrap;
 
+/* ****************************************** */
+.main-first-page {
+  margin: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-first-page ul {
@@ -174,55 +167,70 @@ min-width: 200px
 }
 
 
+/* *************************************** */
+/* Speciefieke stijlen voor de eerste pagina  */
+/* *************************************** */
 
 .main-first-page h1:first-of-type{ 
-    background: var(--main-orange-color); 
-   position: static;
-   text-align: center;
+  width: 100%;
+  color: white;
+  position: static;
+  line-height: 2em;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  background: var(--main-orange-color); 
+  background-image: linear-gradient(var(--main-orange-color),rgba(255, 80, 10, 0.5));
    
-   line-height: 2em;
-   background-image: linear-gradient(var(--main-orange-color),rgba(255, 80, 10, 0.5));
-   color: white;
-   letter-spacing: 10px;
-   text-transform: uppercase;
-   border-radius: 20px;
-   width: 100%;
-   min-width: 200px;
-   
- } 
+} 
 
 .main-first-page section:nth-of-type(1) nav {
   margin: 2em 0;
 }
 
 .main-first-page section:nth-of-type(1) ul {
+ gap: 5px;
  display: flex;
  flex-wrap: wrap;
  justify-content: space-evenly;
-gap: 5px;
-border-bottom: 1px solid rgb(190, 190, 190);
-border-top: 1px solid rgb(190, 190, 190);
+ border-top: 1px solid rgb(190, 190, 190);
+ border-bottom: 1px solid rgb(190, 190, 190);
+
 
 }
 
 .main-first-page section:nth-of-type(1) li {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
+  
   
 }
 
 
 .main-first-page section:nth-of-type(1) a {
-  line-height: 1.5em;
-  font-size: 17px;
+  z-index: 0;
   width: 100%;
-  color: #000000;
-  font-weight: 600;
+  font-size: 17px;
   min-width: 14px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: #000000;
+ 
   
   padding:1em 0.2em;
-  transition: 0.5s;
+  line-height: 1.5em;
+ 
+ 
+  
+  
+ 
+  
+  
+  
+  
  }
 
  .main-first-page section:nth-of-type(1) a:active, main:first-of-type section:nth-of-type(1) a:focus {
@@ -292,9 +300,25 @@ gap: 5em;
 }
 
 
+/* .hover-menu {
+  display: inline-block;
+  position: relative;
 
+}
 
+.hover-menu-content {
+  
+  position: absolute;
+  background-color: #0000003f;
+  min-width: 160px;
+  
+  padding: 12px 16px;
+  z-index: 3;
+}
 
+.hover-menu:hover .hover-menu-content {
+  display: block;
+} */
 
 /* -----------------Stijlen op de tweede pagina  */
 .main-second-page {
@@ -328,6 +352,18 @@ gap: 5em;
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Stijlen voor specifieke section van de pagina  */
 /* de eerste section  -----------------*/
@@ -425,7 +461,23 @@ justify-content: center;
  background-color: rgb(245, 243, 243);
  border-radius: 35px;
 }
+/* --------------- De vijfde section-------------- */
+.main-second-page section:nth-of-type(5) ul{
+  flex-direction: column;
+  gap: 25px;
+  
+}
 
+.main-second-page section:nth-of-type(5) li {
+  background-image: white;
+  box-shadow: 2px 4px 10px rgb(126, 126, 126);
+  border-radius: 20px;
+  
+}
+
+.main-second-page section:nth-of-type(5) a {
+padding: 2em;
+}
 
 
 /* --------Footer------------------ */
