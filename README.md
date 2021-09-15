@@ -131,7 +131,7 @@ Pagina 2:
 
 ### Agenda voor meeting
 samen met je groepje opstellen
-Mijn Punt 
+
 - Wat jan ik nog toevoegen in mijn paginas.
 - Een beetje feedback op mij twee paginas.
 
