@@ -37,7 +37,7 @@ Onderwerpen: Dark/light mode, animaties (loading ect), states van websites, lett
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-Website heet Wattpad en de link: https://www.wattpad.com/home
+[Website heet Wattpad en de link:] (https://www.wattpad.com/home)
 Wattpad is een online bibliotheek waar verschillende mensen fan ficties kan lezen en schrijven. Het is ook een hulpmiddel voor schrijvers die hun vaardigheid wil verbeteren.
 
 #### Screenshot(s) van de eerste pagina (small screen): 
@@ -105,15 +105,36 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In het algemeen kan ik zeggen dat, ik de twee pagina had gedaan in een mobiele versie. Maar het is echt een simpele namaak van mijn 
+gekozen website. Ik denk dat  er meer  details ingezet worden. Bijvoorbeeld animatie. Ik wilde ook iconen erbij zetten, maar ik ben bang dat ik de opmaak gaat verpesten. 
+
+Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive maken. Maar ik denk u kan de eerdere versie terug vinden op github. 
+
+Hier zijn de screenshot van de voortgang van de paginas.
+Pagina 1:
+<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
+Pagina 2:
+<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
+### Wat goed ging.
+- Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
+- Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
+- Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
+- Ik niet elke keer vast. 
+- De opdrachten waren echt nuttig voor het maken van mijn website. 
+
+### Wat  minder goed ging.
+- Ik wilde iconen bijzetten, maar het werd extra moeilijk voor mij om het die te stijlen, maar ik ga op sommige onderdelen wel iconen plaatsen. 
+- Ik vind het een beetje simpel, maar ik weet niet of ik iets beter kan. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| student 1  Keisha Alexander    | student 2          | student 3    | student 4        |
+| Wat jan ik nog toevoegen in mijn paginas.           | ---                | ---          | ---              |
+|Een beetje feedback op mij twee paginas.   | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
