@@ -115,7 +115,7 @@ Pagina 1:
 <img src="images/detailpagina-home.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 Pagina 2:
-<img src="images/bibliotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/biblotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Wat goed ging.
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
