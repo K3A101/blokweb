@@ -121,7 +121,7 @@ Pagina 2:
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
 - Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
 - Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
-- Ik liep niet elke keer vast. 
+- Ik niet elke keer vast. 
 - De opdrachten waren echt nuttig voor het maken van mijn website. 
 
 ### Wat  minder goed ging.
@@ -131,7 +131,7 @@ Pagina 2:
 
 ### Agenda voor meeting
 samen met je groepje opstellen
-
+Mijn Punt 
 - Wat jan ik nog toevoegen in mijn paginas.
 - Een beetje feedback op mij twee paginas.
 
@@ -145,10 +145,13 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Veel commentaar plaatsen in mijn code
+- Naam geven bij de commits, zoals je weet wat er verandert is wanneer je file in github upload
+- Met javascript de samenvatting korter maken via een button.
+- Meer spelen met de surface laag 
+- Code een beetje opmaken want het is een beetje slordig, CSS is gewoon spagetti geworden.
+- Lange css selectors kunnen onder elkaar zijn, zodat het overzichtelijk wordt.
+- Gebruik ook een type unit. Verstandig em te gebruiken in plaats van de pixels. Vooral als je website  responsive ga maken
 
 </details>
 
