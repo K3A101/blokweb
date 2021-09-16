@@ -121,7 +121,7 @@ Pagina 2:
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
 - Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
 - Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
-- Ik niet elke keer vast. 
+- Ik liep niet elke keer vast. 
 - De opdrachten waren echt nuttig voor het maken van mijn website. 
 
 ### Wat  minder goed ging.
