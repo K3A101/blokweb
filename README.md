@@ -294,5 +294,5 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 5. How to change tabs on Hover - https://www.w3schools.com/howto/howto_js_hover_tabs.asp
 6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
 7. css RGBA values - 
-
+8. Iconen - https://css.gg/app
 </details>
