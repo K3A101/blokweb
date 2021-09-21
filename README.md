@@ -295,4 +295,5 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
 7. css RGBA values - 
 8. Iconen - https://css.gg/app
+9. px omzetten in em - https://www.w3schools.com/tags/ref_pxtoemconversion.asp
 </details>
