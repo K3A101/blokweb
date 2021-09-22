@@ -118,6 +118,7 @@ Pagina 2:
 <img src="images/biblotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Wat goed ging.
+- Ik heb de html  twee pagina's. Die een beetje met CSS is vormgegeven. 
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
 - Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
 - Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
@@ -164,7 +165,17 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <details>
 <summary>uitwerken voor 2e voortgang</summary>
 
-### Stand van zaken
+## Stand van zaken
+### Wat goed ging.
+- Ik heb javascript toegevoegd aan mijn website. Ik heb een side menu gemaakt die zichtbaar wordt als je op de boekenkaft klikt. Deze code vind je in het bibliotheek. Op  de andere pagina kun je javascript, kun je de samenvatting van het boek tonen en weghalen.
+
+- Ik heb een beetje animatie toegevoegd bij de side menu en ook de bij de bibliotheek titel. 
+
+- Ik heb de footer vormgegeven  met flex-box.
+
+- 
+
+
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
@@ -294,6 +305,5 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 5. How to change tabs on Hover - https://www.w3schools.com/howto/howto_js_hover_tabs.asp
 6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
 7. css RGBA values - 
-8. Iconen - https://css.gg/app
-9. px omzetten in em - https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+
 </details>
