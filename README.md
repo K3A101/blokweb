@@ -173,13 +173,24 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Ik heb de footer vormgegeven  met flex-box.
 
-- 
+- Ik moet nog de kleine details toevoegen bij de pagina's.
+ 
+ 
+ ### Wat niet goed ging 
+ - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas.Maar het is gelukt door een conditie toe te voegen in die javascript.
+ - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
+ - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemnu en ook de h1.
 
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
 ### Agenda voor meeting
+ ### Mijn punten:
+ - Feedback over het lay-out.
+ - Helpen met de suggesties boeken, tips krijgen. 
+ - Waar kan ik animatie toevoegen ?
+ 
 samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
