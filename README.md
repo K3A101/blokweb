@@ -173,10 +173,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Ik heb de footer vormgegeven  met flex-box.
 
-- 
+- Ik moet nog de kleine details toevoegen bij de pagina's.
+
+
+ ### Wat niet goed ging 
+ - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas.Maar het is gelukt door een conditie toe te voegen in die javascript.
+ - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
+ - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu en ook de h1
 
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+ ### Mijn punten:
+ - Feedback over het lay-out.
+ - Helpen met de suggesties boeken, tips krijgen. 
+ - Waar kan ik animatie toevoegen ?
 
 
 ### Agenda voor meeting
@@ -192,13 +203,14 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
- - de side menu is voor het boek, maar kan meer op de boek komen. Hierbij kan ik animatie toevoegen.
+- de side menu is voor het boek, maar kan meer op de boek komen. Hierbij kan ik animatie toevoegen.
  - Ik kan het menu vanuit het boek laten komen dan kan je de connectie tussen de boek.
  - De plus icoon omzetten in een vinkje 
  - Ik moet de boek suggessties afmaken.
  - Doe de states opdracht voor volgende week.
  - Meer spelen met de surface laag.
  - Een progressbar toevoegen onder de boeken, en het gaat 
+
 
 </details>
 
