@@ -363,6 +363,28 @@ main:first-of-type section:nth-of-type(1) a:focus {
 
 
 
+/* progressbar onder het boek  */
+
+.oranje-balk,
+.licht-grijs-balk {
+
+  height: 1.5em;
+  border-radius: 4em;
+
+}
+
+.licht-grijs-balk {
+  margin: 1.2em 0 0 0;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  box-shadow: 3px 7px 14px -2px rgba(185, 185, 185, 0.83);
+}
+
+.oranje-balk {
+  background-color: var(--main-orange-color);
+  width: 60%;
+
+}
 
 
 
@@ -374,13 +396,14 @@ main:first-of-type section:nth-of-type(1) a:focus {
 /* Code voor de side menu in de bibliotheek pagina  */
 /* Side menu  */
 
+
 @keyframes side-menu-animation {
   0% {
     transform: translateX(-9em)
   }
 
   100% {
-    padding-right: 4em;
+    padding-left: 4em;
     box-shadow: 13px 7px 27px -2px rgba(0, 0, 0, 0.24);
   }
 }
@@ -388,16 +411,16 @@ main:first-of-type section:nth-of-type(1) a:focus {
 
 
 .side-menu {
-  /* top: calc(100% /2); */
-  /* bottom: 10em; */
+  top: calc(100% /2.4);
+  bottom: 14em;
   left: 0;
-  top: 5em;
-  bottom: 0;
+  /* top: 5em; */
+  /* bottom: 0; */
   z-index: 1;
   padding: 1em;
   transition: 1s;
-  position: fixed;
-  padding-right: 4em;
+  position: absolute;
+  padding-left: 4em;
   transform: translateX(-12em);
   background-color: rgb(255, 255, 255);
   box-shadow: 13px 7px 27px -2px rgba(0, 0, 0, 0.24);
@@ -407,7 +430,7 @@ main:first-of-type section:nth-of-type(1) a:focus {
   transform: translateX(0);
   animation-name: side-menu-animation;
   animation-duration: 2s;
-  /* animation-direction: alternate; */
+  animation-direction: alternate;
 
 }
 
@@ -428,16 +451,13 @@ main:first-of-type section:nth-of-type(1) a:focus {
 }
 
 .side-menu-content a:last-of-type {
-  margin-top: 30em;
+  margin-top: 1.5em;
   padding: .8em;
   text-align: center;
   border-radius: 12em;
   color: var(--background-color);
   background-color: var(--button-color);
 }
-
-
-
 
 
 
@@ -488,7 +508,7 @@ main:first-of-type section:nth-of-type(1) a:focus {
 /* ******************************************* */
 /* Stijlen voor specifieke section van de pagina  */
 /* de eerste section  -----------------*/
-/* Bestat uit de boekenkaft met daarin specifieke informatie van het boek. */
+/* Bestaat uit de boekenkaft met daarin specifieke informatie van het boek. */
 /* ***************************************** */
 .main-second-page section:first-of-type {
 
@@ -558,6 +578,26 @@ main:first-of-type section:nth-of-type(1) a:focus {
 .main-second-page section:nth-of-type(2) div span {
   font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------section 3 --------------- */
 /* Code voor de samenvatting  van het boek*/
@@ -669,9 +709,11 @@ main:first-of-type section:nth-of-type(1) a:focus {
 
 
 
-
-/* --------------- De vijfde section-------------- */
+/*******************************************************/
+/*  --------------- De vijfde section-------------- */
 /* Een link naar de hoofdstukken van het boek */
+/******************************************************/
+
 .main-second-page section:nth-of-type(5) ul {
   gap: 1.2em;
   flex-direction: column;
@@ -872,186 +914,3 @@ footer section:last-of-type a {
 
   font-size: 0.8em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /* 
- header {
-
- } */
-
-/* header:nth-of-type(1) {
-   width: 100vw;
-
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5) ;
-position:-webkit-sticky;
-
-position: sticky;
-top: 0;
-z-index: 1;
-background-color: white;
-
-}
- */
-
-
-
-/*  
-header:first-of-type nav ul {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-evenly;
-margin: 0;
- padding: 0 0.5em 0 0;
-} 
-
-header:first-of-type nav ul li {
-  display: flex;
-   
- list-style: none;
- flex-grow: 1;
-}
-
-/* De directe kind van de ul  */
-/* header:first-of-type nav ul > li  {
-  display: flex;
-  align-items: center; */
-
-/* } */
-/* De directe kind van de ul met daarin de  image */
-/* header:first-of-type nav ul > li img:first-of-type {
-  width: 100vh;
-  max-width: 50px;
-   */
-/* } */
-
-
-/* header:first-of-type nav ul li a {
-  width: 100%;
-  max-width:500px;
-  
-  background-color: var(--background-color);
-  font-weight: 600;
-  padding: 1em;
-
-  font-size: 16px;
-
- color: black;
-
-  text-decoration: none;
-
-  list-style: none;
- } */
-
-/* ----------------main------------------------- */
-/* Hier komt de stijlen voor het main elementen  van pagina 1 */
-/* ----------------main------------------------- */
-
-/* main {
-   margin:0  3em;
- } */
-
-/* main li {
-   list-style: none;
- }
-
-
-
- main section:nth-of-type(1) nav ul   {
- display: flex;
-   justify-content: flex-start;
-   gap: 0.5em;
-   position: relative;
-
- } */
-
-/* main section:nth-of-type(1) h1:first-of-type{ */
-/* background: var(--main-orange-color); */
-/* position: fixed;
-   text-align: center;
-   left: -20px;
-   top: 0;
-
-   bottom: -100px;
-   writing-mode: vertical-lr;
-   line-height: 2em;
-   background-image: linear-gradient(var(--main-orange-color),rgba(255, 80, 10, 0.5));
-   color: white;
-   letter-spacing: 10px;
-   text-transform: uppercase;
-   
- } */
-
-/* main section:nth-of-type(1) nav ul li  {
-   list-style: none;
-   display: flex;
- 
-   
-
- }
-
- main section:nth-of-type(1) nav ul li:last-of-type {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   
- } */
-
-/* 
- main section:nth-of-type(1) nav ul li a {
-   width: 30vw;
-   max-width: 400px;
-   text-align: left;
-   display: block;
-   text-decoration: none;
-   line-height: 50px;
-   font-size: 16px;
-   padding: 5px;
-   flex-grow: 1;
-   
-
- }
- main section:nth-of-type(2) nav ul {
-   display: flex;
- flex-direction: column;
- flex-wrap: wrap;
-
- 
- 
-
- }
-
- main section:nth-of-type(2) nav ul li {
-   margin:  3em 0;
- }
-
- 
-
-main section:nth-of-type(2) nav ul li  a  img {
-   width: 100%;
-   max-width: 300px
-   
-  
- } */
