@@ -201,7 +201,14 @@ samen met je groepje opstellen
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+ - de side menu is voor het boek, maar kan meer op de boek komen. Hierbij kan ik animatie toevoegen.
+ - Ik kan het menu vanuit het boek laten komen dan kan je de connectie tussen de boek.
+ - De plus icoon omzetten in een vinkje 
+ - Ik moet de boek suggessties afmaken.
+ - Doe de states opdracht voor volgende week.
+ - Meer spelen met de surface laag.
+ - Een progressbar toevoegen onder de boeken, en het gaat 
+ - 
 
 - punt 1
 - punt 2
