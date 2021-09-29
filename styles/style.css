@@ -8,11 +8,6 @@ html {
   margin: 0;
 }
 
-*:focus {
-  outline-color: var(--button-color);
-  outline-width: medium;
-  outline-style: solid;
-}
 
 /* Algemen stijlen voor de hele pagina */
 :root {
@@ -45,6 +40,11 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline-color: var(--button-color);
+  outline-width: medium;
+  outline-style: solid;
+}
 
 
 
@@ -219,17 +219,34 @@ op de eerste pagina  */
 
 .main-first-page h1:first-of-type {
   width: 100%;
-  color: var(--white-color);
+
   position: static;
   line-height: 2em;
   min-width: 200px;
   text-align: center;
   border-radius: 20px;
-  background: var(--main-orange-color);
-  text-shadow: 4px 4.5px 2px #682104;
 
-  /* letter-spacing: 10px;
- /* text-transform: uppercase; */
+  /* https: //www.cssportal.com/css-text-gradient-generator/ */
+
+  background: #FF500A;
+  background: -webkit-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+  background: -moz-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+  background: linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2em;
+
+
+
+
+  letter-spacing: 10px;
+  text-transform: uppercase;
+
+  /* color: var(--white-color); */
+  /* background: var(--main-orange-color); */
+  /* text-shadow: 4px 4.5px 2px #682104; */
   /* background: var(--main-orange-color);  */
   /* background-image: linear-gradient(var(--main-orange-color), rgba(255, 80, 10, 0.5)); */
 
@@ -565,8 +582,17 @@ main:first-of-type section:nth-of-type(1) a:focus {
   text-align: center;
   padding: 0.5em;
   border-radius: 2em;
-  color: var(--white-color);
-  background: var(--main-orange-color);
+
+  /* background: #FF500A;
+  background: -webkit-linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
+  background: -moz-linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
+  background: linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  /* color: var(--white-color);
+  background: var(--main-orange-color); */
 
 }
 
@@ -933,6 +959,9 @@ form {
   background-color: var(--section-color);
   padding: 1.5em;
   border-radius: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 legend,
@@ -943,8 +972,8 @@ legend {
 
 legend {
   font-size: 1.2em;
-  margin: 0 auto;
-  padding: 1em 1em 1em 0;
+
+  padding: .5em .5em .5em 0;
 
 }
 
@@ -970,7 +999,15 @@ input[type="email"] {
 }
 
 
-
+/* De verzenden button */
+form button {
+  background-color: var(--button-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4em;
+  padding: 1em;
+  align-self: flex-end;
+}
 
 
 
