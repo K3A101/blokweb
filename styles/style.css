@@ -59,7 +59,7 @@ header {
   right: 0;
   margin: 0;
   padding: 0;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   position: relative;
   position: -webkit-sticky;
@@ -90,8 +90,8 @@ header a {
 
   padding: .5em;
   color: black;
-  min-width: 16px;
-  font-size: 16px;
+  min-width: 1em;
+  font-size: 1em;
   cursor: pointer;
   font-weight: 600;
   line-height: 1em;
@@ -159,22 +159,78 @@ figure:nth-of-type(1) img {
   border-radius: 40px;
   transform: translateX(.5em);
   box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
+  z-index: 3;
+
+
+
 
 }
 
 
+/* animatie van de gebruikersfoto */
+@keyframes gebruikersfoto-animation {
+  0% {
+    transform: translateX(.5em);
+    width: 55px;
+  }
+
+  100% {
+    transform: translateX(-19em);
+    width: 80px;
+  }
+}
+
+figure:nth-of-type(1) img:hover,
+figure:nth-of-type(1) img:active {
+  animation-name: gebruikersfoto-animation;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  /* animation-direction: alternate; */
+  /* Laat de element op de dat positie staan */
+}
+
+/* https: //stackoverflow.com/questions/13981730/how-can-i-let-my-css3-animation-to-stay-at-its-animated-position-when-it-finishe */
+
+/* Animatie voor gebruikersnaam */
+
+
+figcaption {
+  right: 20px;
+  top: 1em;
+  /* transform: translateY(2em); */
+  position: absolute;
+  opacity: 0;
+  animation-name: gebruikersnaam-animation;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  /* animation-direction: alternate; */
+}
+
+
+
+@keyframes gebruikersnaam-animation {
+  0% {
+    opacity: 0;
+    /* transform: translateY(2em); */
+  }
 
 
 
 
 
 
+  100% {
+    opacity: 1;
 
+    transform: translateX(-5em);
+    font-size: 1.3em;
+    color: var(--button-color);
 
-
-
-
-
+  }
+}
 
 /* ****************************************************** */
 /* PAGINA 1 */
@@ -396,6 +452,18 @@ main:first-of-type section:nth-of-type(1) a:focus {
   border-radius: 3em 0 0 3em;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .main-first-page section:nth-of-type(2) img:last-of-type {
@@ -723,11 +791,21 @@ main:first-of-type section:nth-of-type(1) a:focus {
 }
 
 
+.main-second-page section:nth-of-type(3) article p::selection,
+.main-second-page section:nth-of-type(3) article p span::selection {
+  background-color: var(--button-color);
+  color: rgb(202, 202, 202);
+
+}
+
 /* Spaties tussen de samenvatting */
 .main-second-page section:nth-of-type(3) article p span {
   display: block;
   margin: 1.5em 0;
 }
+
+
+
 
 /* Met javascript wordt de samenvatting zichtbaar */
 .main-second-page section:nth-of-type(3) article p.samenvatting-zichtbaar {
@@ -956,7 +1034,8 @@ section:nth-of-type(7) a {
 
 /* Het formulier - Waar de gebruiker kan zijn email invoeren */
 form {
-  background-color: var(--section-color);
+  /* background-color: var(--section-color); */
+  margin-top: 5em;
   padding: 1.5em;
   border-radius: 4em;
   display: flex;
@@ -964,22 +1043,46 @@ form {
   gap: 1em;
 }
 
-legend,
+
 legend {
   font-weight: bold;
-}
-
-
-legend {
-  font-size: 1.2em;
+  font-size: 1.5em;
 
   padding: .5em .5em .5em 0;
-
 }
 
-label {
+
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
+  border: none;
+}
+
+input[type="text"]:active,
+input[type="text"]:hover,
+input[type="email"]:active,
+input[type="email"]:hover,
+textarea:hover,
+textarea:active,
+select:hover,
+select:active {
+  background-color: var(--section-color);
+  border: 2px solid var(--button-color);
+  transition: 0.5s;
+}
+
+
+
+
+
+
+fieldset label {
   margin: 1em;
   padding-right: 1em;
+  font-weight: bold;
 
 
 
@@ -990,12 +1093,29 @@ label[placeholder="Voer jouw email in"] {
 
 }
 
-
-input[type="email"] {
+input,
+select {
   padding: 1em;
   border-radius: 4em;
   border: 1px solid var(--line-gray-color);
   width: 100%;
+
+}
+
+input,
+textarea {
+  color: var(--main-orange-color);
+}
+
+
+textarea {
+  /* color: #c4c4c4; */
+  font-family: 'Barlow', sans-serif;
+  padding: 1em;
+  border-radius: 2em;
+  border: 1px solid var(--line-gray-color);
+  width: 100%;
+  /* color: var(--button-color); */
 }
 
 
@@ -1007,9 +1127,15 @@ form button {
   border-radius: 4em;
   padding: 1em;
   align-self: flex-end;
+  font-weight: bold;
 }
 
-
+form button:hover,
+form button:active {
+  background-color: var(--main-orange-pastel-color);
+  color: var(--button-color);
+  transition: 0.5s;
+}
 
 
 

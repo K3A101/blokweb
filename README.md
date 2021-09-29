@@ -224,10 +224,48 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+### Leven met een screenreader
+<img src="images/screenreader.jpeg" width="375px" alt="screenreader gebruiken">
+
+Voor het toegankelijkheid test had ik een paar tools gebruikt om de leven van mensen met een beperking te kunnen in te leven. 
+Daaruit had ik aantal bevinding uitgehaald.
+1. De screenreader spraak twee talen, engels en Nederlands. Mijn screenreader is in het engels en op het HTML pagina is de html is in het Nederlands.
+2. Het screen reader noemt de aantal links en heading. Maar op het website valt het mee. 
+3. Als loopt trager dan ik gewend bent met een screenreader. Ik moest wachten totdat de screenreader alles voorleesde. Maar je kan dingen overslaan.
+4. Screen reader op een telefoon is verschrikkelijk, elke keer moet twee drukken om iets te kiezen en het hele ervaring ging heel traag.
+5. Elk link wordt voorgelezen met de desbetreffende omschrijving. 
+6. Veel dingen wordt in snelle tempo gelezen. Er zijn  veel dingen die achter elkaar wordt gelezen. 
+7. Bij een image lees de screenreader de alternatieve tekst van het afbeelding.
+8. De screenreader lees de naam van het HTML document voor.
+9. 
+
+
+### Screenreader op telefoon
+1. Je moet hard drukken om de elementen te activeren.
+2. Als je begrijpt hoe de screen reader werkt dan is het makkelijk om te ermee te werken.
+
+
+
+### Muis en een toetsenbord 
+1. De focus state is een heel belangrijke element voor mensen die een toetsenbord gebruikt.
+2. Hover state is niet belangrijk als je een toetsenbordt gebruikt maar wel een muis.
+3. Als je de tab toets gebruikt, dan moet je zorgen dat de structuur  logisch is.
+
+
+### Gele gekleurd bril
+1. De achtergrond kleur van het formulier was een lichte groen, maar door die gekleurde bril is die helemaal onzichtbaar geworden.
+2. Er was genoeg contrast tussen de tekst en de achtegrond. 
+
+
+### Wazig bril
+1.  Alle tekst waren helemaal niet te lezen. 
+2. Ik zag wel contrast tussen de achtergrond en de tekst.
+3. De afbeelding waren niet scherp.
+
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
+
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
@@ -261,7 +299,11 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben klaar met mijn website. Ik moet nog de kleine details zetten. Zoals commentaar. De bronnen vermelden. Voor het laast heb ik aan het docent gevraagd voor feedback. Ik vroeg wat ik nog meer kan toevoegen bij een van de twee pagina's.
+- Meer Animaties
+- Een uitgebreide formulier en die stijlen
+- De responsiveness die ik maakt verbeteren met media query.
+
 
 
 ### Agenda voor meeting
@@ -319,6 +361,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 4. How to create a responsive header - https://www.w3schools.com/howto/howto_css_responsive_header.asp
 5. How to change tabs on Hover - https://www.w3schools.com/howto/howto_js_hover_tabs.asp
 6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
-7. css RGBA values - 
+7. css RGBA values -
+8.  Iconen: https://css.gg/
 
 </details>

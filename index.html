@@ -62,6 +62,7 @@
 	<figure>
 
 		<img class="gebruiker-foto" src="./images/profiel-foto-van-gebruiker.png" alt="Gebruikerfoto">
+		<figcaption>Keïsha Alexander</figcaption>
 	</figure>
 
 
@@ -239,20 +240,38 @@
 		<!-- Om updates te krijgen over nieuwe hoofdstukken -->
 		<section>
 			<form>
-				<legend>Blijf op de Hoogte</legend>
+				<legend>Neem contact met auteur</legend>
 
 				<fieldset>
 					<label for="voornaam">Voornaam</label>
-					<input type="text" name="voornaam" id="voornaam">
+					<input type="text" name="voornaam" id="voornaam" placeholder="Voornaam">
 
 					<label for="achternaam">Achternaam</label>
-					<input type="text" name="achternaam" id="achternaam">
+					<input type="text" name="achternaam" id="achternaam" placeholder="Achtenaam">
 
 				</fieldset>
 
 				<fieldset>
 					<label for="email"> E-mail</label>
 					<input type="email" name="search-bar" id="email" placeholder="Voer jouw email in">
+				</fieldset>
+
+				<fieldset>
+					<label for="auter">Naar wie wil je een bericht sturen</label>
+					<select name="auteur" id="auteur">
+						<option value="auteurnaam-een"> Auteur 1</option>
+						<option value="auteurnaam-twee"> Auteur 2</option>
+						<option value="auteurnaam-drie"> Auteur 3</option>
+						<option value="auteurnaam-vier"> Auteur 4</option>
+						<option value="auteurnaam-vijf"> Auteur 5</option>
+					</select>
+				</fieldset>
+
+
+				<fieldset>
+					<label for="bericht">Geef een bericht</label>
+					<textarea name="" id="bericht" cols="30" rows="10"> Plaats een opmerking</textarea>
+
 				</fieldset>
 
 				<button type="submit">Verzenden</button>
