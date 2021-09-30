@@ -8,8 +8,9 @@ html {
   margin: 0;
 }
 
-
-/* Algemen stijlen voor de hele pagina */
+/*****************************************/
+/*  Algemeen stijlen voor de hele pagina */
+/*****************************************/
 :root {
   --button-color: #2a1c60;
   --background-color: #fefefe;
@@ -21,7 +22,6 @@ html {
   --line-gray-color: rgb(190, 190, 190);
   --white-color: white;
   --section-color: #f2fdfd;
-
 }
 
 
@@ -48,10 +48,15 @@ a:focus {
 
 
 
-/* ------------------------- */
-/* Hier begin de stijlen voor de header voor beide pagina */
-/* ------------------------------------------------- */
 
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+/************/
+/* HEADER */
+/***********/
 
 header {
   top: 0;
@@ -68,26 +73,21 @@ header {
   background-color: var(--background-color);
 }
 
-
-
 header nav {
-
   background-color: rgb(255, 244, 218);
 }
 
 header ul {
-  gap: 20px;
+  gap: 1.25em;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   /* justify-content:space-evenly; */
 }
 
-
 header a {
   display: block;
   width: 100%;
-
   padding: .5em;
   color: black;
   min-width: 1em;
@@ -104,15 +104,13 @@ header nav a {
 }
 
 header nav a:hover {
-
   background-color: var(--header-link-color);
 }
 
 
 header nav a:active,
 header nav a:focus {
-
-  border-bottom: 4px solid var(--main-orange-color);
+  border-bottom: 0.2em solid var(--main-orange-color);
 }
 
 header .logo-container {
@@ -121,24 +119,23 @@ header .logo-container {
   justify-content: center;
 }
 
-header .logo-link {
-  font-size: 20px;
+/* Wattpad  */
+header .logo-container a {
+  transition: 0.5s;
+  font-size: 1.25em;
   color: var(--main-orange-color);
-
 }
 
-
-header:first-of-type img:first-of-type {
-  width: 55px;
-  max-width: 75px;
-  min-width: 50px;
-
+/* Wattpad logo */
+header .logo-container img {
+  top: 0;
+  right: 7em;
+  width: 3em;
+  max-width: 4.7em;
+  min-width: 3.1em;
+  transition: 0.5s;
+  position: absolute;
 }
-
-
-
-
-
 
 
 
@@ -146,97 +143,84 @@ header:first-of-type img:first-of-type {
 /* ***************************** */
 /* Figure is de gebruikers foto */
 /* **************************** */
-
 figure {
   position: relative;
 }
 
+/* gebruikersfoto */
 figure:nth-of-type(1) img {
-  right: 20px;
-  width: 55px;
+  z-index: 3;
+  width: 3.4em;
+  right: 1.25em;
   margin: 1em 0.5em;
   position: absolute;
-  border-radius: 40px;
+  border-radius: 3em;
   transform: translateX(.5em);
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.329);
-  z-index: 3;
-
-
-
-
+  box-shadow: 0.12em 0.18em 0.37em rgba(0, 0, 0, 0.329);
 }
 
+/*************/
+/* ANIMATIES */
+/*************/
 
 /* animatie van de gebruikersfoto */
 @keyframes gebruikersfoto-animation {
   0% {
+    width: 3.4em;
     transform: translateX(.5em);
-    width: 55px;
   }
 
   100% {
     transform: translateX(-19em);
-    width: 80px;
   }
 }
 
+/* Als je klikt of hover wordt de animatie geactiveerd */
 figure:nth-of-type(1) img:hover,
 figure:nth-of-type(1) img:active {
-  animation-name: gebruikersfoto-animation;
-  animation-iteration-count: 1;
   animation-duration: 5s;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* animation-direction: alternate; */
+  animation-name: gebruikersfoto-animation;
   /* Laat de element op de dat positie staan */
+  /* https: //stackoverflow.com/questions/13981730/how-can-i-let-my-css3-animation-to-stay-at-its-animated-position-when-it-finishe */
 }
-
-/* https: //stackoverflow.com/questions/13981730/how-can-i-let-my-css3-animation-to-stay-at-its-animated-position-when-it-finishe */
 
 /* Animatie voor gebruikersnaam */
-
-
 figcaption {
-  right: 20px;
   top: 1em;
-  /* transform: translateY(2em); */
-  position: absolute;
   opacity: 0;
-  animation-name: gebruikersnaam-animation;
-  animation-iteration-count: 1;
+  right: 1.25em;
+  position: absolute;
   animation-delay: 3s;
   animation-duration: 2s;
+  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* animation-direction: alternate; */
+  animation-name: gebruikersnaam-animation;
 }
-
-
 
 @keyframes gebruikersnaam-animation {
   0% {
     opacity: 0;
-    /* transform: translateY(2em); */
   }
-
-
-
-
-
 
   100% {
     opacity: 1;
-
-    transform: translateX(-5em);
     font-size: 1.3em;
     color: var(--button-color);
-
+    transform: translateX(-5em);
   }
 }
 
-/* ****************************************************** */
+
+
+/*************/
 /* PAGINA 1 */
+/************/
+
+/* ****************************************************** */
 /* Hier begin het stijlen voor de content binnen de main HTML */
 /* Onderaan staan de stijlen voor de eerste pagina  */
-
 /* ****************************************** */
 .main-first-page {
   margin: 3em;
@@ -254,36 +238,31 @@ figcaption {
 .main-first-page li {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-
-
+/* Code voor alle afbeelding voor pagina 1 */
 .main-first-page section img {
   width: 100%;
-  max-width: 300px;
-  min-width: 200px
+  max-width: 19em;
+  min-width: 12.5em;
 }
 
 
 /* *************************************** */
-/* Speciefieke stijlen voor de eerste pagina  */
+/* Specifieke stijlen voor de eerste pagina */
 /* *************************************** */
 
-/* Dit is de vormgeving voor de bibliotheek titel 
-op de eerste pagina  */
-
+/* Dit is de vormgeving voor de bibliotheek titel op de eerste pagina  */
 .main-first-page h1:first-of-type {
   width: 100%;
-
-  position: static;
+  transition: 1s;
   line-height: 2em;
   min-width: 200px;
   text-align: center;
-  border-radius: 20px;
+
 
   /* https: //www.cssportal.com/css-text-gradient-generator/ */
-
+  /* De codent van de gradient */
   background: #FF500A;
   background: -webkit-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
   background: -moz-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
@@ -293,158 +272,99 @@ op de eerste pagina  */
   -webkit-text-fill-color: transparent;
 
   font-size: 2em;
-
-
-
-
-  letter-spacing: 10px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 
-  /* color: var(--white-color); */
-  /* background: var(--main-orange-color); */
-  /* text-shadow: 4px 4.5px 2px #682104; */
-  /* background: var(--main-orange-color);  */
-  /* background-image: linear-gradient(var(--main-orange-color), rgba(255, 80, 10, 0.5)); */
-
-
 }
 
 
 
-/* 
 
-.main-first-page h1:first-of-type:hover {
-  animation-name: titel-animation;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+/*************/
+/*SECTION 1  */
+/*************/
 
-
-}
-
-
-@keyframes titel-animation {
-  0% {}
-
-  100% {
-
-    background-color: var(--button-color);
-
-    transform: scale(1);
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    background: var(--button-color);
-  }
-} */
-
-
-
-
-
-
-
-/* ********************************* */
+/* **************************************************************** */
 /* Dit is voor Section 1 van Pagina 1 */
 /* Die bestaat uit de huidige reads en de archiveren en leeslijst */
-/* ********************************* */
+/* **************************************************************** */
 .main-first-page section:nth-of-type(1) nav {
   margin: 2em 0;
 }
 
 .main-first-page section:nth-of-type(1) ul {
-  gap: 5px;
+  gap: .1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   border-top: 1px solid var(--line-gray-color);
   border-bottom: 1px solid var(--line-gray-color);
-
-
 }
 
 .main-first-page section:nth-of-type(1) li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
 }
 
 /* De links */
 .main-first-page section:nth-of-type(1) a {
   z-index: 0;
   width: 100%;
-  font-size: 17px;
-  min-width: 14px;
+  font-size: 1em;
+  min-width: 0.8em;
   font-weight: 600;
   transition: 0.5s;
-  color: var(--black-color);
   padding: 1em 0.2em;
   line-height: 1.5em;
+  color: var(--black-color);
 }
-
-
 
 .main-first-page section:nth-of-type(1) a:active,
-main:first-of-type section:nth-of-type(1) a:focus {
-  font-size: 19px;
-  border-bottom: 4px solid var(--main-orange-color);
+.main-first-page section:nth-of-type(1) a:focus,
+.main-first-page section:nth-of-type(1) a:hover {
+  font-size: 1.3em;
+  border-bottom: 0.3em solid var(--main-orange-color);
 }
 
 
+/*************/
+/* SECTION 2 */
+/*************/
 
-
-
-
-
-
-
-
-
-
-
-/* ***************************** */
-/* Section 2 van pagina 1 */
-/* Bestaat uit de boeken die opgeslagen zijn in mijn bibliotheek */
-/* ***************************** */
-
+/******************************************************************/
+/*  Bestaat uit de boeken die opgeslagen zijn in mijn bibliotheek */
+/******************************************************************/
 .main-first-page section:nth-of-type(2) ul {
   gap: 5em;
 }
-
 
 .main-first-page section:nth-of-type(2) a {
   position: relative;
 }
 
-
 /* Het boekenkaft  */
-
 .main-first-page section:nth-of-type(2) img {
-  box-shadow: 3px 5px 15px rgb(119, 119, 119);
+  box-shadow: 0.2em 0.3em 0.9em rgb(119, 119, 119);
 }
 
-
-
 /* Het titel van het boek */
-
 .main-first-page section:nth-of-type(2) h2 {
   top: 0;
   z-index: 0;
   padding: 0.5em;
   position: absolute;
-  /* writing-mode: vertical-lr; */
   color: var(--white-color);
   background-image: linear-gradient(to bottom, #ff4f0ab7, #ff4f0a33);
 }
 
-
-/* Naam van auteur */
+/* Naam van auteur  op het boekenkaft*/
 .main-first-page section:nth-of-type(2) p {
-
   right: 0;
-  bottom: 2px;
+  bottom: 0.1em;
   padding: 1em;
   color: white;
-  font-size: 18px;
+  font-size: 1.2em;
   font-weight: 600;
   position: absolute;
   text-align: center;
@@ -453,19 +373,7 @@ main:first-of-type section:nth-of-type(1) a:focus {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* De auteurs profiel foto */
 .main-first-page section:nth-of-type(2) img:last-of-type {
 
   position: absolute;
@@ -474,47 +382,40 @@ main:first-of-type section:nth-of-type(1) a:focus {
   min-width: 2em;
   max-width: 6em;
   border-radius: 20em;
-  box-shadow: 0 4px 10px black;
-  border: 2px solid var(--main-orange-color);
-
+  box-shadow: 0 0.3em 0.6em black;
+  border: 0.1em solid var(--main-orange-color);
 }
 
-
-
-
 /* progressbar onder het boek  */
-
 .oranje-balk,
 .licht-grijs-balk {
-
-  height: 1.2em;
+  height: 1em;
   border-radius: 4em;
-
 }
 
 .licht-grijs-balk {
   margin: 1.2em 0 0 0;
   width: 100%;
   background-color: rgb(230, 230, 230);
-  box-shadow: 3px 7px 14px -2px rgba(185, 185, 185, 0.83);
+  box-shadow: 0.2em 0.4em 0.9em -0.1em rgba(185, 185, 185, 0.83);
 }
 
 .oranje-balk {
-  background-color: var(--main-orange-color);
   width: 60%;
-
+  background-color: var(--main-orange-color);
 }
 
 
 
 
+/*****************/
+/* HET SIDE MENU */
+/*****************/
 
-
-
-/* ********************************************88 */
-/* Code voor de side menu in de bibliotheek pagina  */
-/* Side menu  */
-
+/*******************************************************/
+/* Code voor de side menu in de bibliotheek pagina   */
+/*  Side menu is een menu die zichtbaar wordt als je op de boeken klikt */
+/*******************************************************/
 
 @keyframes side-menu-animation {
   0% {
@@ -527,14 +428,10 @@ main:first-of-type section:nth-of-type(1) a:focus {
   }
 }
 
-
-
 .side-menu {
   top: calc(100% /2.4);
   bottom: 8em;
   left: 0;
-  /* top: 5em; */
-  /* bottom: 0; */
   z-index: 1;
   padding: 1em;
   transition: 1s;
@@ -550,23 +447,29 @@ main:first-of-type section:nth-of-type(1) a:focus {
   animation-name: side-menu-animation;
   animation-duration: 2s;
   animation-direction: alternate;
-
 }
 
 .side-menu-content {
   display: flex;
   flex-direction: column;
   margin-top: 2em;
-
 }
 
+/* De links binnen de side menu */
 .side-menu-content a {
   padding: .5em;
   color: black;
   font-weight: bold;
+  transition: 0.2s;
+}
 
-
-
+.side-menu-content a:hover,
+.side-menu-content a:active,
+.side-menu-content a:focus {
+  background-color: #e0e0e0;
+  color: #5c4c9b;
+  border-radius: 4em;
+  font-size: 1.2em;
 }
 
 .side-menu-content a:last-of-type {
@@ -582,459 +485,11 @@ main:first-of-type section:nth-of-type(1) a:focus {
 
 
 
+/*****************/
+/* HET FORMULIER */
+/*****************/
 
-
-
-/* ******************************************* */
-/* PAGINA 2 */
-/* -----------------Stijlen op de tweede pagina  */
-/* ALGEMENE STIJLEN VOOR DE tweede pagina  */
-/* ************************************************8 */
-.main-second-page {
-  margin: 2em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.main-second-page ul,
-.main-second-page li {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.main-second-page section {
-  display: flex;
-  margin: 4em 0;
-  position: relative;
-  flex-direction: column;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* ******************************************* */
-/* Stijlen voor specifieke section van de pagina  */
-/* de eerste section  -----------------*/
-/* Bestaat uit de boekenkaft met daarin specifieke informatie van het boek. */
-/* ***************************************** */
-.main-second-page section:first-of-type {
-
-  gap: 1em;
-  margin: 0;
-  padding: 1em;
-  flex-direction: column;
-  justify-content: center;
-
-  box-shadow: 1px 18px 22px -11px rgba(0, 0, 0, 0.27);
-
-}
-
-/* Titel van het boek */
-
-.main-second-page section:first-of-type h1 {
-
-  width: 100%;
-  min-width: 200px;
-  text-align: center;
-  padding: 0.5em;
-  border-radius: 2em;
-
-  /* background: #FF500A;
-  background: -webkit-linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
-  background: -moz-linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
-  background: linear-gradient(to top left, #FF500A 20%, #FFC773 50%, #FFDAB0 87%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-
-  /* color: var(--white-color);
-  background: var(--main-orange-color); */
-
-}
-
-/* Link die naar de pagina  van het auteurs gaat */
-.main-second-page section:first-of-type a {
-  order: 0;
-  text-align: center;
-}
-
-/* Het boekenkaft */
-.main-second-page section:first-of-type img {
-  order: 1;
-  width: 100%;
-  min-width: 3em;
-  max-width: 18em;
-  align-self: center;
-  border-radius: 2em;
-}
-
-
-
-/*  ---------------------de eerste section------------------ */
-
-
-
-
-
-
-/* **************************************************** */
-/* de tweede section------------------------------------ */
-/* De statistieken van het boek zoals aantal mensen die het boek had gekeken */
-/* ***************************************************** */
-.main-second-page section:nth-of-type(2) ul {
-  gap: 1em;
-
-
-}
-
-.main-second-page section:nth-of-type(2) li {
-  flex-direction: row;
-  padding: 0 .5em;
-  border-right: 1px solid var(--line-gray-color);
-  flex-grow: 1;
-  gap: 1em;
-  align-items: center;
-}
-
-.main-second-page section:nth-of-type(2) li:last-of-type {
-  border: none;
-}
-
-.main-second-page section:nth-of-type(2) div {
-  flex-direction: column;
-  font-size: 0.8em;
-}
-
-.main-second-page section:nth-of-type(2) div span {
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------section 3 --------------- */
-/* Code voor de samenvatting  van het boek*/
-/* --------------------------------------- */
-
-/* Stijlen van het toon samenvatting button */
-
-.main-second-page section:nth-of-type(3) {
-  margin-top: 0.5em;
-}
-
-
-.main-second-page section:nth-of-type(3) button {
-  padding: 1em;
-  border: none;
-
-  margin-top: 0.5em;
-  color: var(--white-color);
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 4em;
-  background-color: var(--button-color);
-  transition: 0.2s;
-
-}
-
-/* Button om de samenvatting te tonen */
-.main-second-page section:nth-of-type(3) button:active,
-.main-second-page section:nth-of-type(3) button:hover {
-  transition: 0.2s;
-  color: var(--button-color);
-  background-color: var(--main-orange-pastel-color);
-}
-
-
-
-.main-second-page section:nth-of-type(3) article {
-
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-/* Het samenvatting  */
-.main-second-page section:nth-of-type(3) article p {
-  display: none;
-  font-size: 18px;
-  line-height: 1.5em;
-  transition: 1s;
-  color: #3f3f3f;
-}
-
-
-.main-second-page section:nth-of-type(3) article p::selection,
-.main-second-page section:nth-of-type(3) article p span::selection {
-  background-color: var(--button-color);
-  color: rgb(202, 202, 202);
-
-}
-
-/* Spaties tussen de samenvatting */
-.main-second-page section:nth-of-type(3) article p span {
-  display: block;
-  margin: 1.5em 0;
-}
-
-
-
-
-/* Met javascript wordt de samenvatting zichtbaar */
-.main-second-page section:nth-of-type(3) article p.samenvatting-zichtbaar {
-  display: block;
-  transition: 1s;
-}
-
-
-
-/* Code voor het address */
-
-.main-second-page article address {
-  font-size: 1.3em;
-  margin: .5em 0;
-  color: var(--black-color);
-  font-weight: bold;
-  border-bottom: var(--black-color);
-
-}
-
-.main-second-page article address a {
-  display: block;
-  font-weight: normal;
-  font-size: 0.9em;
-  color: var(--black-color);
-}
-
-
-
-
-
-
-
-
-/* Vierde section------------------------ */
-/* De tags van het boek */
-
-.main-second-page section:nth-of-type(4) ul {
-  gap: 10px;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-.main-second-page section:nth-of-type(4) a {
-
-  padding: 0.8em;
-  border-radius: 35px;
-  color: rgba(0, 0, 0, 0.959);
-  background-color: rgb(245, 243, 243);
-
-}
-
-
-
-
-
-
-
-
-/*******************************************************/
-/*  --------------- De vijfde section-------------- */
-/* Een link naar de hoofdstukken van het boek */
-/******************************************************/
-
-.main-second-page section:nth-of-type(5) ul {
-  gap: 2em;
-  flex-direction: column;
-}
-
-.main-second-page section:nth-of-type(5) li {
-
-  border-radius: 1em;
-  background-color: rgb(255, 255, 255);
-  /* border: 2px solid #ff946a; */
-  box-shadow: 0px 26px 28px -5px rgba(0, 0, 0, 0.24);
-
-}
-
-.main-second-page section:nth-of-type(5) li:hover {
-  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.31);
-  color: var(--main-orange-color);
-}
-
-/* Links  */
-
-
-.main-second-page section:nth-of-type(5) a:hover,
-.main-second-page section:nth-of-type(5) a:active {
-  color: var(--main-orange-color);
-
-}
-
-.main-second-page section:nth-of-type(5) a {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  padding: 1.5em;
-  font-size: 1em;
-  font-weight: bold;
-  color: #000000;
-}
-
-.main-second-page section:nth-of-type(5) li:nth-of-type(2) a i:last-of-type {
-  margin-left: .8em;
-}
-
-/* Het span binnen het paragraaf die binnen een link is */
-.main-second-page section:nth-of-type(5) a p span {
-  font-weight: lighter;
-  margin-left: .5em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* De zesde section --------------------------------- */
-/* De boek suggesties */
-.main-second-page section:nth-of-type(6) h2 {
-  padding: 1em 0;
-  font-size: 1.8em;
-}
-
-.main-second-page section:nth-of-type(6) ul {
-  justify-content: center;
-  flex-flow: row;
-  gap: 2em;
-  max-width: 350px;
-  overflow-x: auto;
-
-}
-
-
-
-.main-second-page section:nth-of-type(6) img {
-  max-width: 7em;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ************************ */
-/* De zevende section */
-/* Button om het boek te lezen */
-section:nth-of-type(7) {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 2em;
-
-}
-
-section:nth-of-type(7) ul {
-  gap: .5em;
-  justify-content: center;
-}
-
-section:nth-of-type(7) li {
-  background-color: black;
-
-}
-
-
-
-section:nth-of-type(7) li:first-of-type {
-  border-radius: 111px 0px 0px 113px;
-  -moz-border-radius: 111px 0px 0px 113px;
-  -webkit-border-radius: 111px 0px 0px 113px;
-}
-
-
-section:nth-of-type(7) li:last-of-type {
-  border-radius: 0px 113px 113px 0px;
-  -moz-border-radius: 0px 113px 113px 0px;
-  -webkit-border-radius: 0px 113px 113px 0px;
-  /* https: //www.cssmatic.com/border-radius */
-}
-
-
-section:nth-of-type(7) a {
-  display: flex;
-  gap: 1em;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  font-size: 1.3em;
-  padding: 1.2em;
-  font-weight: bold;
-}
-
-
-
-
-/* Icoon voor het button */
-.gg-math-plus,
-.gg-readme {
-  width: 3em;
-}
-
-
-
-
-
-
-/* Het formulier - Waar de gebruiker kan zijn email invoeren */
 form {
-  /* background-color: var(--section-color); */
   margin-top: 5em;
   padding: 1.5em;
   border-radius: 4em;
@@ -1043,22 +498,17 @@ form {
   gap: 1em;
 }
 
-
 legend {
-  font-weight: bold;
   font-size: 1.5em;
-
+  font-weight: bold;
   padding: .5em .5em .5em 0;
 }
 
-
-
 fieldset {
-  display: flex;
-  flex-direction: column;
-
   padding: 1em;
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 input[type="text"]:active,
@@ -1074,32 +524,22 @@ select:active {
   transition: 0.5s;
 }
 
-
-
-
-
-
 fieldset label {
   margin: 1em;
   padding-right: 1em;
   font-weight: bold;
-
-
-
 }
 
 label[placeholder="Voer jouw email in"] {
   padding: 0.5em;
-
 }
 
 input,
 select {
+  width: 100%;
   padding: 1em;
   border-radius: 4em;
   border: 1px solid var(--line-gray-color);
-  width: 100%;
-
 }
 
 input,
@@ -1107,17 +547,13 @@ textarea {
   color: var(--main-orange-color);
 }
 
-
 textarea {
-  /* color: #c4c4c4; */
-  font-family: 'Barlow', sans-serif;
+  width: 100%;
   padding: 1em;
   border-radius: 2em;
+  font-family: 'Barlow', sans-serif;
   border: 1px solid var(--line-gray-color);
-  width: 100%;
-  /* color: var(--button-color); */
 }
-
 
 /* De verzenden button */
 form button {
@@ -1143,8 +579,593 @@ form button:active {
 
 
 
-/* --------Footer------------------ */
-/* Algemene Stijling voor de footer  */
+
+/************************************************/
+/*  Een beetje responsive maken - voor pagina 1 */
+/************************************************/
+@media (min-width: 40em) {
+  .main-first-page section:nth-of-type(2) ul {
+    display: flex;
+    margin-top: 4em;
+    justify-content: center;
+
+    transition: 0.5s;
+  }
+
+  .main-first-page h1:first-of-type {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width:50em) {
+
+  /* wattpad logo */
+  header .logo-container a {
+    display: flex;
+    font-size: 2.5em;
+    margin: 0 auto;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: 0.5s;
+  }
+
+  header .logo-container img {
+    position: absolute;
+    top: 1em;
+    left: 11em;
+    width: 3.4em;
+    transition: 0.5s;
+  }
+
+  /* algemene navigatiebalk */
+  header ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
+    font-size: 1.2em;
+    transition: 1s;
+  }
+
+  /* gebruikersfoto */
+  figure:nth-of-type(1) img {
+    width: 6em;
+    border-radius: 4em;
+    transition: 0.5s;
+  }
+
+
+  /* gebruikersnaam */
+  figcaption {
+    top: 2.3em;
+    right: 2em;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  /* Bibliotheek titel */
+  .main-first-page h1:first-of-type {
+    font-size: 4em;
+    text-align: left;
+    transition: 1s;
+  }
+
+  .main-first-page section:nth-of-type(2) ul {
+    display: flex;
+    margin-top: 4em;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.5s;
+  }
+
+  /* het formulier */
+  form {
+    margin: 3em 20em;
+  }
+
+  form fieldset:first-of-type {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************/
+/*PAGINA 2 Details van het boek*/
+/*******************************/
+
+
+/* *************************************** */
+/* ALGEMENE STIJLEN VOOR DE TWEEDE PAGINA */
+/* ************************************** */
+.main-second-page {
+  margin: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-second-page ul,
+.main-second-page li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-second-page section {
+  display: flex;
+  margin: 4em 0;
+  position: relative;
+  flex-direction: column;
+}
+
+
+
+/*************/
+/* SECTION 1 */
+/**************/
+
+/* ****************************************************************************************************************************** */
+/* de eerste section Bestaat uit de boekenkaft met daarin specifieke informatie van het boek. Zoals de titel, auteur en boekenkaft */
+/* ******************************************************************************************************************************* */
+.main-second-page section:first-of-type {
+  gap: 1em;
+  margin: 0;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0.7em 1.1em 1.4em -0.7em rgba(0, 0, 0, 0.27);
+}
+
+/* Titel van het boek */
+.main-second-page section:first-of-type h1 {
+  width: 100%;
+  padding: 0.5em;
+  min-width: 13em;
+  text-align: center;
+  border-radius: 2em;
+}
+
+/* Link die naar de pagina  van het auteurs gaat */
+.main-second-page section:first-of-type a {
+  order: 0;
+  text-align: center;
+}
+
+/* Het boekenkaft */
+.main-second-page section:first-of-type img {
+  order: 1;
+  width: 100%;
+  min-width: 3em;
+  max-width: 18em;
+  align-self: center;
+  border-radius: 2em;
+}
+
+
+
+
+
+
+
+/*************/
+/* SECTION 2 */
+/**************/
+
+/* ************************************************************************ */
+/* Het statistieken van het boek zoals aantal mensen die het boek had gelezen*/
+/* *********************************************************************** */
+.main-second-page section:nth-of-type(2) ul {
+  gap: 1em;
+}
+
+/* Het statistiek van het boek */
+.main-second-page section:nth-of-type(2) li {
+  gap: 1em;
+  flex-grow: 1;
+  padding: 0 .5em;
+  align-items: center;
+  flex-direction: row;
+  border-right: 0.06em solid var(--line-gray-color);
+}
+
+.main-second-page section:nth-of-type(2) li:last-of-type {
+  border: none;
+}
+
+.main-second-page section:nth-of-type(2) div {
+  font-size: 0.8em;
+  flex-direction: column;
+}
+
+.main-second-page section:nth-of-type(2) div span {
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************/
+/* SECTION 3 */
+/**************/
+
+/**********************************/
+/* Het samenvatting van het boek */
+/*********************************/
+
+/* Stijlen van het toon samenvatting button */
+.main-second-page section:nth-of-type(3) {
+  margin-top: 0.5em;
+}
+
+/* Button om de samenvatting te tonen */
+.main-second-page section:nth-of-type(3) button {
+  padding: 1em;
+  border: none;
+  transition: 0.2s;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  font-weight: bold;
+  border-radius: 4em;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--button-color);
+}
+
+/* states voor de button */
+.main-second-page section:nth-of-type(3) button:active,
+.main-second-page section:nth-of-type(3) button:hover {
+  transition: 0.2s;
+  color: var(--button-color);
+  background-color: var(--main-orange-pastel-color);
+}
+
+/* Het samenvatting  */
+.main-second-page section:nth-of-type(3) article {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Het samenvatting  */
+.main-second-page section:nth-of-type(3) article p {
+  display: none;
+  font-size: 18px;
+  line-height: 1.5em;
+  transition: 1s;
+  color: #3f3f3f;
+}
+
+.main-second-page section:nth-of-type(3) article p::selection,
+.main-second-page section:nth-of-type(3) article p span::selection {
+  color: rgb(202, 202, 202);
+  background-color: var(--button-color);
+}
+
+/* Spaties tussen de samenvatting */
+.main-second-page section:nth-of-type(3) article p span {
+  display: block;
+  margin: 1.5em 0;
+}
+
+/* Met javascript wordt de samenvatting zichtbaar */
+.main-second-page section:nth-of-type(3) article p.samenvatting-zichtbaar {
+  display: block;
+  transition: 1s;
+}
+
+/* Code voor het address */
+.main-second-page article address {
+  margin: .5em 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--black-color);
+  border-bottom: var(--black-color);
+}
+
+.main-second-page article address a {
+  display: block;
+  font-size: 0.9em;
+  font-weight: normal;
+  color: var(--black-color);
+}
+
+
+
+
+
+
+/**************/
+/*SECTION 4  */
+/************/
+
+/************************/
+/* De tags van het boek */
+/***********************/
+
+.main-second-page section:nth-of-type(4) ul {
+  gap: 0.6em;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-second-page section:nth-of-type(4) a {
+  padding: 0.8em;
+  border-radius: 2em;
+  color: rgba(0, 0, 0, 0.959);
+  background-color: rgb(245, 243, 243);
+}
+
+
+
+
+
+/**************/
+/*SECTION 5  */
+/************/
+
+/*******************************************************/
+/* Een link naar de hoofdstukken van het boek */
+/******************************************************/
+
+.main-second-page section:nth-of-type(5) ul {
+  gap: 2em;
+  flex-direction: column;
+}
+
+.main-second-page section:nth-of-type(5) li {
+  border-radius: 1em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1.7em 1.8em -0.3em rgba(0, 0, 0, 0.24);
+}
+
+.main-second-page section:nth-of-type(5) li:hover {
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.31);
+  color: var(--main-orange-color);
+}
+
+/* Links  */
+.main-second-page section:nth-of-type(5) a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-second-page section:nth-of-type(5) a:hover,
+.main-second-page section:nth-of-type(5) a:active {
+  color: var(--main-orange-color);
+}
+
+.main-second-page section:nth-of-type(5) li:nth-of-type(2) a i:last-of-type {
+  margin-left: .8em;
+}
+
+/* lichtgedrukt tekst */
+.main-second-page section:nth-of-type(5) a p span {
+  margin-left: .5em;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**************/
+/*SECTION 6 */
+/************/
+
+/**********************/
+/* De boek suggesties */
+/**********************/
+
+.main-second-page section:nth-of-type(6) h2 {
+  padding: 1em 0;
+  font-size: 1.8em;
+}
+
+.main-second-page section:nth-of-type(6) ul {
+  gap: 2em;
+  flex-flow: row;
+  overflow-x: auto;
+  max-width: 22em;
+  justify-content: center;
+}
+
+.main-second-page section:nth-of-type(6) img {
+  max-width: 7em;
+}
+
+
+
+
+
+
+
+
+
+/**************/
+/*SECTION 7  */
+/************/
+
+/*******************************/
+/* Button om het boek te lezen */
+/*******************************/
+section:nth-of-type(7) {
+  bottom: 2em;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+section:nth-of-type(7) ul {
+  gap: .5em;
+  justify-content: center;
+}
+
+section:nth-of-type(7) li {
+  background-color: black;
+}
+
+section:nth-of-type(7) li:first-of-type {
+  border-radius: 7em 0 0 7em;
+  -moz-border-radius: 7em 0 0 7em;
+  -webkit-border-radius: 7em 0 0 7em;
+}
+
+section:nth-of-type(7) li:last-of-type {
+  border-radius: 0 7em 7em 0;
+  -moz-border-radius: 0 7em 7em 0;
+  -webkit-border-radius: 0 7em 7em 0;
+  /* https: //www.cssmatic.com/border-radius */
+}
+
+section:nth-of-type(7) a {
+  gap: 1em;
+  display: flex;
+  color: white;
+  padding: 1.2em;
+  font-size: 1.3em;
+  font-weight: bold;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Icoon voor het button */
+.gg-math-plus,
+.gg-readme {
+  width: 3em;
+}
+
+/*****************************/
+/*  PAGINA 2 RESPONSIVE MAKEN*/
+/*****************************/
+
+@media (min-width:37em) {
+  .main-second-page section:nth-of-type(3) article p {
+    line-height: 2em;
+  }
+}
+
+@media (min-width:50em) {
+
+  /*SECTION 1 */
+  .main-second-page section:first-of-type {
+    flex-direction: row;
+  }
+
+  .main-second-page section:first-of-type img {
+    order: -1;
+    align-self: flex-start;
+  }
+
+  /* titel van het boek */
+  .main-second-page section:first-of-type h1 {
+    font-size: 2em;
+  }
+
+  /* naam van auteur */
+  .main-second-page section:first-of-type a {
+    top: 5em;
+    right: 17em;
+    font-size: 1.5em;
+    position: absolute;
+  }
+
+  /* SECTION 2 */
+  /* Statistieken */
+  .main-second-page section:nth-of-type(2) ul {
+    gap: 3em;
+    z-index: 2;
+    top: -10em;
+    left: 40em;
+    position: absolute;
+  }
+
+  /* SECTION 3 */
+  /* Samenvatting van het boek */
+  .main-second-page section:nth-of-type(3) article p {
+    margin: 0 8em;
+    line-height: 2em;
+  }
+
+  /* De translators van het boek */
+  .main-second-page article address {
+    margin: 0 7em;
+  }
+
+  .main-second-page section:nth-of-type(3) button {
+    margin-right: 10em;
+    align-self: flex-end;
+  }
+
+  /* SECTION 5*/
+  /* De link naar de hoofdstukken */
+  .main-second-page section:nth-of-type(5) li {
+    margin: 0 15em;
+  }
+
+  /* SECTION 6 */
+  /* Boek suggesties */
+  .main-second-page section:nth-of-type(6) h2 {
+    margin: 0 4em;
+    font-size: 2.5em;
+  }
+
+  .main-second-page section:nth-of-type(6) ul {
+    gap: 2em;
+    margin: 0;
+    max-width: none;
+    overflow-x: none;
+    justify-content: center;
+  }
+
+  .main-second-page section:nth-of-type(6) img {
+    max-width: 40em;
+  }
+}
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+/*************************************/
+/* Algemene Stijen voor de footer  */
+/*************************************/
+
 footer {
   background-color: rgb(228, 228, 228);
   background-color: #eeeeee;
@@ -1157,10 +1178,8 @@ footer section li:active {
 
 footer section li {
   display: flex;
-
   padding: 0 1em;
   border-bottom: 1px solid #a7a7a7;
-
 }
 
 footer section a {
@@ -1171,17 +1190,16 @@ footer section a {
   color: black;
 }
 
-
 footer section ul {
   display: flex;
 }
 
 
+/* SECTION 1 */
 
-
-/* *******************************************88 */
+/* ********************************************* */
 /* Specifieke stijling voor elk section */
-/* De eerste section */
+/* ********************************************* */
 footer section:first-of-type ul {
   flex-flow: wrap column;
 }
@@ -1191,42 +1209,23 @@ footer section:first-of-type li {
   justify-content: space-between;
 }
 
-
-
 /* De laatste li van de eerste section */
 footer section:first-of-type li:last-of-type {
   align-self: center;
   padding-top: 1em;
-
-
 }
-
-
-
 
 /* Dit is voor de arrow iconen */
 /* Bron:https://css.gg/arrow-right */
 .gg-arrow-right {
-
   display: inline;
   transform: scale(var(--ggs, 1));
   width: 22px;
   height: 22px
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*  De tweede section van de footer  */
-
+/* SECTION 2 */
+/* Voorwaarden, privacy, hulp links */
 footer section:last-of-type ul {
   justify-content: center;
   gap: .5em;
@@ -1238,6 +1237,32 @@ footer section:last-of-type li {
 
 footer section:last-of-type a {
   padding: 0;
-
   font-size: 0.8em;
+}
+
+/***************************/
+/* Footer responsive maken */
+/***************************/
+@media (min-width:50em) {
+
+
+  footer section:first-of-type ul {
+    gap: 2em;
+    padding: 0.5em;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer section:first-of-type li:last-of-type {
+    padding: 0;
+  }
+
+  footer section:first-of-type li i {
+    display: none;
+  }
+
+  footer section li {
+    border-bottom: none;
+  }
 }

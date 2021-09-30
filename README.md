@@ -319,10 +319,12 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Code een beetje verzorgd maken
+- Bij de javascript  moet ik alle variabele, functions, en eventlisteners  bij elkaar zetten.
+- De gebruikers foto beter positioneren, zodat het niet op het titel blijft.
+- Rekening houden met toegankelijkheid.
+- Px omzetten in em.
+- States toevoegen bij de side menu.
 
 </details>
 
