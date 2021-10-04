@@ -106,10 +106,13 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-In het algemeen kan ik zeggen dat, ik de twee pagina had gedaan in een mobiele versie. Maar het is echt een simpele namaak van mijn 
+In het algemeen zijn beide HTML pagina klaar. Maar het is echt een simpele namaak van mijn 
 gekozen website. Ik denk dat  er meer  details toegevoegd kan worden. Bijvoorbeeld animatie. Ik wilde ook iconen erbij zetten, maar ik ben bang dat ik de opmaak gaat verpesten. 
+Verpesten in de zin van weer de HTML moet gaan aanpassen. 
 
-Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive maken. 
+Ik ben ook de eerdere css vormegeving weggehaald want ik wilde aandere stijl proberen dus ik ben opnieuw begonnen. Daardoor zijn de paginas meer responsive geworden.
+
+
 Hier zijn de screenshot van de voortgang van de paginas.
 
 #### Pagina 1:
@@ -119,7 +122,7 @@ Hier zijn de screenshot van de voortgang van de paginas.
 <img src="images/biblotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Wat goed ging.
-- Ik heb de html  twee pagina's. Die een beetje met CSS is vormgegeven. 
+- Ik heb de html twee pagina's. Die een beetje met CSS is vormgegeven. 
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
 - Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
 - Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
@@ -128,7 +131,7 @@ Hier zijn de screenshot van de voortgang van de paginas.
 
 ### Wat  minder goed ging.
 - Ik wilde iconen bijzetten, maar het werd extra moeilijk voor mij om het die te stijlen, maar ik ga op sommige onderdelen wel iconen plaatsen. 
-- Ik vind het een beetje simpel, maar ik weet niet of ik iets beter kan. 
+- Ik vind beide paginas simpel qua lay-out, maar ik weet niet of ik iets beter kan. 
 
 
 ### Agenda voor meeting
@@ -178,12 +181,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
  ### Wat niet goed ging 
- <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
  - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas. Maar het is gelukt door een conditie toe te voegen in die javascript.
 
+ <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
 
- - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
- - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu en ook de h1
+ - Ik vind de  vormgeving van beide paginas een beetje chaotisch en te veel kleuren zijn te fel. Ik wil het een beetje minimalistisch houden.
+ - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu  en de bibliotheek titel. 
 
 
 
@@ -210,7 +213,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
  - Ik kan het menu vanuit het boek laten komen dan kan je de connectie tussen de boek.
  - De plus icoon omzetten in een vinkje 
  - Ik moet de boek suggesties afmaken.
- - Doe de states opdracht voor volgende week.
+ - Maak de states opdracht voor volgende week.
  - Meer spelen met de surface laag.
  - Een progressbar toevoegen onder de boeken. Het laat zien hoe ver je bent met het boek. 
 
@@ -286,7 +289,7 @@ Er zijn ook mensen die geen muis kan gebruiken.
 
 Oplossing 1:
  In mijn website heb ik de states vooral de focus state duidelijk vormgegeven als je de tab toets gebruikt. 
- In mij geval heb ik de de outline van alle elementen dikker gemaakt. 
+Daardoor heb ik de de outline van alle elementen dikker gemaakt. 
 
 Oplossing 2:
 Toestcombinaties zou ook handig zijn  om de  website te gebruiken. Bijvoorbeeld een toets combinatie om de detail van het boek te zien.
@@ -326,7 +329,7 @@ Meer afbeelding of andere grafische elementen gebruiken die de tekst ondersteune
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Ik ben klaar met mijn website. Ik moet nog de kleine details zetten. Zoals commentaar. De bronnen vermelden. Voor het laatst heb ik aan het docent gevraagd voor feedback. Ik vroeg wat ik nog meer kan toevoegen bij een van de twee pagina's.
+Ik ben klaar met mijn website. Ik moet nog de kleine details zetten. Zoals commentaar. De bronnen vermelden. Vorige week had ik feedback gevraagd door het docent. Ik vroeg wat ik nog meer kan toevoegen bij een van de twee pagina's.
 - Meer Animaties
 - Een uitgebreide formulier en die stijlen
 - De responsiveness verbeteren met media query.
@@ -367,18 +370,18 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 
 #### Wat goed ging 
-Ik ben klaar met het opdracht voor front-end-development. Ik heb veel geleerd de laatste weken.  Wat ik echt nuttig vond waren de animaties met css maken en positioneren. Ik heb uiteindelijk de wepaginas responsive gemaakt. Het was al een beetje responsive met flexbox maar ik heb met  media query gebruikt om de elementen te verbeteren. Verder is mijn HTML, CSS en Javascript code verzorgd met heel veel commentaar en hier en daar wat bronvermelding. Ik heb de site geopend op mijn telefoon en het werkt.
+Ik ben klaar met het opdracht voor front-end-development. Ik heb veel geleerd de laatste weken.  Wat ik echt nuttig vond waren de animaties met css maken en positioneren. Ik heb uiteindelijk de webpaginas responsive gemaakt. Het was al een beetje responsive met flexbox maar ik heb  media query gebruikt om de elementen te verbeteren. Verder is mijn HTML, CSS en Javascript code verzorgd met heel veel commentaar en hier en daar wat bronvermelding. Ik heb de site geopend op mijn telefoon en het werkt.
 
 - Ik heb animatie toegevoegd bij het profiel foto
 - Ik heb de active, hover en focus state vormgegeven 
 - Ik heb een formulier gemaakt in het bibliotheek pagina 
-- 
+
 
 
 
 
 #### Wat niet  goed ging 
-Ik wilde mijn website in dark mode maken door middel media query te gebruiken maar ik had de tijd niet. En mijn custom css property is niet helemaal compleet dus ik heb zo laat staan. Verder wilde ik ook een toggle button maken om de dark mode uit te zetten. Maar ik had ook niet genoeg tijd.
+Ik wilde mijn website in dark mode maken door middel van media query  maar ik had de tijd niet. En mijn custom css property is niet helemaal compleet dus ik heb het zo laten staan. Verder wilde ik ook een toggle button maken om de dark mode uit te zetten. Maar ik had ook niet genoeg tijd.
 hier screenshot(s) van je eindresultaat
 ### Screenshot(s)
 #### Je bibliotheek pagina 

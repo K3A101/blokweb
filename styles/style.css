@@ -266,7 +266,7 @@ figcaption {
 
 
   /* https: //www.cssportal.com/css-text-gradient-generator/ */
-  /* De codent van de gradient */
+  /* De coden van de gradient */
   background: #FF500A;
   background: -webkit-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
   background: -moz-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
@@ -301,8 +301,8 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border-top: 1px solid var(--line-gray-color);
-  border-bottom: 1px solid var(--line-gray-color);
+  border-top: 0.06em solid var(--line-gray-color);
+  border-bottom: 0.06em solid var(--line-gray-color);
 }
 
 .main-first-page section:nth-of-type(1) li {
@@ -337,8 +337,8 @@ figcaption {
 /* SECTION 2 */
 /*************/
 
-/******************************************************************/
-/*  Bestaat uit de boeken die opgeslagen zijn in mijn bibliotheek */
+/********************************************************************/
+/*  Bestaat uit de boeken die opgeslagen zijn in eigen bibliotheek */
 /******************************************************************/
 .main-first-page section:nth-of-type(2) ul {
   gap: 5em;
@@ -357,6 +357,8 @@ figcaption {
 /* Het titel van het boek */
 .main-first-page section:nth-of-type(2) h2 {
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 0;
   padding: 0.5em;
   position: absolute;
@@ -608,6 +610,9 @@ form button:active {
 }
 
 @media (min-width:50em) {
+  header {
+    position: static;
+  }
 
   /* wattpad logo */
   header .logo-container a {
@@ -793,15 +798,12 @@ form button:active {
 /* ************************************************************************ */
 /* Het statistieken van het boek zoals aantal mensen die het boek had gelezen*/
 /* *********************************************************************** */
-.main-second-page section:nth-of-type(2) ul {
-  gap: 1em;
-}
 
 /* Het statistiek van het boek */
 .main-second-page section:nth-of-type(2) li {
-  gap: 1em;
+  gap: 0.6em;
   flex-grow: 1;
-  padding: 0 .5em;
+  padding: 0 0.65em;
   align-items: center;
   flex-direction: row;
   border-right: 0.06em solid var(--line-gray-color);
@@ -952,8 +954,14 @@ form button:active {
   border-radius: 2em;
   color: rgba(0, 0, 0, 0.959);
   background-color: rgb(245, 243, 243);
+  transition: 0.5s;
 }
 
+.main-second-page section:nth-of-type(4) a:hover,
+.main-second-page section:nth-of-type(4) a:active {
+  color: white;
+  background-color: rgb(141, 141, 141);
+}
 
 
 
@@ -1041,6 +1049,7 @@ form button:active {
 
 .main-second-page section:nth-of-type(6) img {
   max-width: 7em;
+
 }
 
 
@@ -1070,6 +1079,7 @@ section:nth-of-type(7) ul {
 }
 
 section:nth-of-type(7) li {
+  transition: 0.5s;
   background-color: black;
 }
 
@@ -1084,6 +1094,12 @@ section:nth-of-type(7) li:last-of-type {
   -moz-border-radius: 0 7em 7em 0;
   -webkit-border-radius: 0 7em 7em 0;
   /* https: //www.cssmatic.com/border-radius */
+}
+
+section:nth-of-type(7) li:hover,
+section:nth-of-type(7) li:active {
+  background-color: var(--button-color);
+  bottom: var(--white-color);
 }
 
 section:nth-of-type(7) a {
@@ -1150,7 +1166,8 @@ section:nth-of-type(7) a {
   /* SECTION 2 */
   /* Statistieken */
   .main-second-page section:nth-of-type(2) ul {
-    gap: 3em;
+    justify-content: center;
+    gap: 2em;
     z-index: 2;
     top: -10em;
     left: 40em;
@@ -1181,12 +1198,12 @@ section:nth-of-type(7) a {
   }
 
   .main-second-page section:nth-of-type(3) button {
+    transition: 0.5s;
     position: absolute;
-    transform: translateY(-15em);
-    transform: translateX(-3em);
     margin-right: 10em;
     align-self: flex-end;
-    transition: 0.5s;
+    transform: translateY(-15em);
+    transform: translateX(-3em);
   }
 
   /* SECTION 5*/
@@ -1214,14 +1231,16 @@ section:nth-of-type(7) a {
 
   .main-second-page section:nth-of-type(6) img {
     max-width: 40em;
+
   }
 
   /* SECTION 7 */
+  /* Button om het boek te lezen */
   section:nth-of-type(7) {
-    position: block;
-    position: absolute;
     top: 2em;
     right: 25em;
+    position: block;
+    position: absolute;
     transform: translateY(20em);
   }
 }
