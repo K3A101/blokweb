@@ -29,7 +29,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
 }
 
 li {
@@ -214,6 +214,10 @@ figcaption {
 
 
 
+/********/
+/* main */
+/********/
+
 /*************/
 /* PAGINA 1 */
 /************/
@@ -320,6 +324,7 @@ figcaption {
   color: var(--black-color);
 }
 
+/* states van de links */
 .main-first-page section:nth-of-type(1) a:active,
 .main-first-page section:nth-of-type(1) a:focus,
 .main-first-page section:nth-of-type(1) a:hover {
@@ -341,6 +346,7 @@ figcaption {
 
 .main-first-page section:nth-of-type(2) a {
   position: relative;
+  transition: 0.5s;
 }
 
 /* Het boekenkaft  */
@@ -358,7 +364,7 @@ figcaption {
   background-image: linear-gradient(to bottom, #ff4f0ab7, #ff4f0a33);
 }
 
-/* Naam van auteur  op het boekenkaft*/
+/* Naam van auteur op het boekenkaft*/
 .main-first-page section:nth-of-type(2) p {
   right: 0;
   bottom: 0.1em;
@@ -429,8 +435,8 @@ figcaption {
 }
 
 .side-menu {
-  top: calc(100% /2.4);
-  bottom: 8em;
+  top: 25em;
+  bottom: -10em;
   left: 0;
   z-index: 1;
   padding: 1em;
@@ -502,6 +508,7 @@ legend {
   font-size: 1.5em;
   font-weight: bold;
   padding: .5em .5em .5em 0;
+  text-align: center;
 }
 
 fieldset {
@@ -513,14 +520,17 @@ fieldset {
 
 input[type="text"]:active,
 input[type="text"]:hover,
+input[type="text"]:focus,
 input[type="email"]:active,
 input[type="email"]:hover,
+input[type="email"]:focus,
 textarea:hover,
 textarea:active,
+textarea:focus,
 select:hover,
-select:active {
+select:active select:focus {
   background-color: var(--section-color);
-  border: 2px solid var(--button-color);
+  border: 0.3em solid var(--button-color);
   transition: 0.5s;
 }
 
@@ -602,7 +612,7 @@ form button:active {
   /* wattpad logo */
   header .logo-container a {
     display: flex;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0 auto;
     font-weight: bold;
     align-self: flex-start;
@@ -622,7 +632,7 @@ form button:active {
     display: flex;
     justify-content: flex-start;
     gap: 4em;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: 1s;
   }
 
@@ -649,6 +659,7 @@ form button:active {
     transition: 1s;
   }
 
+  /* de positie van de boeken */
   .main-first-page section:nth-of-type(2) ul {
     display: flex;
     margin-top: 4em;
@@ -656,6 +667,20 @@ form button:active {
     align-items: flex-start;
     transition: 0.5s;
   }
+
+  .main-first-page section:nth-of-type(2) a:hover {
+    transform: scale(1.2);
+  }
+
+  /* side menu */
+  .side-menu {
+    top: 35em;
+    bottom: -20em;
+
+    transition: 1s;
+
+  }
+
 
   /* het formulier */
   form {
@@ -843,6 +868,13 @@ form button:active {
   background-color: var(--main-orange-pastel-color);
 }
 
+/* Titel van de article */
+.main-second-page section:nth-of-type(3) article h1 {
+  padding: 2em 0;
+  font-size: 1.3em;
+
+}
+
 /* Het samenvatting  */
 .main-second-page section:nth-of-type(3) article {
   padding: 1em;
@@ -855,9 +887,10 @@ form button:active {
 .main-second-page section:nth-of-type(3) article p {
   display: none;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.8em;
   transition: 1s;
   color: #3f3f3f;
+  text-align: left;
 }
 
 .main-second-page section:nth-of-type(3) article p::selection,
@@ -906,13 +939,14 @@ form button:active {
 /************************/
 /* De tags van het boek */
 /***********************/
-
+/* achtegrond van de tags  */
 .main-second-page section:nth-of-type(4) ul {
   gap: 0.6em;
   flex-direction: row;
   justify-content: center;
 }
 
+/* De tags zijn links  */
 .main-second-page section:nth-of-type(4) a {
   padding: 0.8em;
   border-radius: 2em;
@@ -1076,6 +1110,7 @@ section:nth-of-type(7) a {
 @media (min-width:37em) {
   .main-second-page section:nth-of-type(3) article p {
     line-height: 2em;
+    text-align: justify;
   }
 }
 
@@ -1093,12 +1128,20 @@ section:nth-of-type(7) a {
 
   /* titel van het boek */
   .main-second-page section:first-of-type h1 {
-    font-size: 2em;
+    font-size: 3.5em;
+    transition: 0.5s;
+    background: #FF500A;
+    background: -webkit-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+    background: -moz-linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+    background: linear-gradient(to top left, #FF500A 1%, #FFC773 50%, #FFDAB0 65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   /* naam van auteur */
   .main-second-page section:first-of-type a {
-    top: 5em;
+    top: 7em;
     right: 17em;
     font-size: 1.5em;
     position: absolute;
@@ -1115,10 +1158,21 @@ section:nth-of-type(7) a {
   }
 
   /* SECTION 3 */
+  /* titel van de article / samenvatting */
+  .main-second-page section:nth-of-type(3) article h1 {
+    padding: 0;
+    padding-bottom: 0.2em;
+    font-size: 2em;
+    margin: 0 4.5em;
+    transition: 0.5s;
+  }
+
   /* Samenvatting van het boek */
   .main-second-page section:nth-of-type(3) article p {
     margin: 0 8em;
     line-height: 2em;
+    transition: 0.5s;
+    text-align: justify;
   }
 
   /* De translators van het boek */
@@ -1127,14 +1181,20 @@ section:nth-of-type(7) a {
   }
 
   .main-second-page section:nth-of-type(3) button {
+    position: absolute;
+    transform: translateY(-15em);
+    transform: translateX(-3em);
     margin-right: 10em;
     align-self: flex-end;
+    transition: 0.5s;
   }
 
   /* SECTION 5*/
   /* De link naar de hoofdstukken */
   .main-second-page section:nth-of-type(5) li {
+
     margin: 0 15em;
+
   }
 
   /* SECTION 6 */
@@ -1154,6 +1214,15 @@ section:nth-of-type(7) a {
 
   .main-second-page section:nth-of-type(6) img {
     max-width: 40em;
+  }
+
+  /* SECTION 7 */
+  section:nth-of-type(7) {
+    position: block;
+    position: absolute;
+    top: 2em;
+    right: 25em;
+    transform: translateY(20em);
   }
 }
 

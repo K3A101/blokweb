@@ -90,8 +90,6 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 <img src="images/breakdownschets-menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -106,10 +104,9 @@ De andere pagina bevat alle detail van het boek  die veel secties bevatten.
 
 ### Stand van zaken
 In het algemeen kan ik zeggen dat, ik de twee pagina had gedaan in een mobiele versie. Maar het is echt een simpele namaak van mijn 
-gekozen website. Ik denk dat  er meer  details ingezet worden. Bijvoorbeeld animatie. Ik wilde ook iconen erbij zetten, maar ik ben bang dat ik de opmaak gaat verpesten. 
+gekozen website. Ik denk dat  er meer  details toegevoegd kan worden. Bijvoorbeeld animatie. Ik wilde ook iconen erbij zetten, maar ik ben bang dat ik de opmaak gaat verpesten. 
 
-Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive maken. Maar ik denk u kan de eerdere versie terug vinden op github. 
-
+Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive maken. 
 Hier zijn de screenshot van de voortgang van de paginas.
 Pagina 1:
 <img src="images/detailpagina-home.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -122,7 +119,7 @@ Pagina 2:
 - Ik kon de pagina voor mobiel maken, ik moest even spelen met flex box 
 - Er wordt een paar theorie in mijn website toegepast zoals het positioneren van elementen. 
 - Ik heb goed gebruikt gemaakt van de huisstijl van de echte website.
-- Ik niet elke keer vast. 
+- Ik lipe niet elke keer vast. 
 - De opdrachten waren echt nuttig voor het maken van mijn website. 
 
 ### Wat  minder goed ging.
@@ -177,7 +174,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
  ### Wat niet goed ging 
- - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas.Maar het is gelukt door een conditie toe te voegen in die javascript.
+ - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas. Maar het is gelukt door een conditie toe te voegen in die javascript.
+ <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
+
  - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
  - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu en ook de h1
 
@@ -206,10 +205,10 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - de side menu is voor het boek, maar kan meer op de boek komen. Hierbij kan ik animatie toevoegen.
  - Ik kan het menu vanuit het boek laten komen dan kan je de connectie tussen de boek.
  - De plus icoon omzetten in een vinkje 
- - Ik moet de boek suggessties afmaken.
+ - Ik moet de boek suggesties afmaken.
  - Doe de states opdracht voor volgende week.
  - Meer spelen met de surface laag.
- - Een progressbar toevoegen onder de boeken, en het gaat 
+ - Een progressbar toevoegen onder de boeken. Het laat zien hoe ver je bent met het boek. 
 
 
 </details>
@@ -237,7 +236,7 @@ Daaruit had ik aantal bevinding uitgehaald.
 6. Veel dingen wordt in snelle tempo gelezen. Er zijn  veel dingen die achter elkaar wordt gelezen. 
 7. Bij een image lees de screenreader de alternatieve tekst van het afbeelding.
 8. De screenreader lees de naam van het HTML document voor.
-9. 
+
 
 
 ### Screenreader op telefoon
@@ -263,29 +262,55 @@ Daaruit had ik aantal bevinding uitgehaald.
 3. De afbeelding waren niet scherp.
 
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De tekst waren niet te lezen
+Ik droeg de blurry bril. Deze bril kreeg ik een gevoel hoe mensen die slechtziend zijn die niet opgelost kan zijn door een bril te dragen.  Alles was heel wazig. Zonder mijn bril kan dingen die ver weg zijn niet scherp meer zien. 
+
+Toen ik die bril draagt kon ik niks meer zien. De letters waren niet meer te lezen. De tekst was standaard 1em. Maar met die bril waren ze niet eens leesbaar. 
+
+Oplossing 1:
+Als een oplossing kan de gebruiker een screen reader gebruiken om de content  te horen. Dus alle links moet goed beschreven worden. Alle afbeeldingen moeten een goede alternatieve tekst bevatten. 
+
+Oplsossing 2:
+<img src="images/samenvating.jpg" width="375px" alt="formulier in het default state">
+Andere oplossing is om alle tekst groter te maken. Op mijn website kan het samenvatting van het boek groter zijn met  een grote regelafstand.
 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Toetsenboard gebruikers 
+Er zijn ook mensen die geen muis kan gebruiken. 
+
+Oplossing 1:
+ In mijn website heb ik de states vooral de focus state duidelijk vormgegeven als je de tab toets gebruikt. 
+ In mij geval heb ik de de outline van alle elementen dikker gemaakt. 
+
+Oplossing 2:
+Toestcombinaties zou ook handig zijn  om de  website te gebruiken. Bijvoorbeeld een toets combinatie om de detail van het boek te zien.
+
+Oplossing 3: 
+Een voice  ai waar de gebruikers commando geven aan de website. Bijvoorbeeld "wattpad open -titel van het boek-" Met dat commando wordt de gekozen boek geopend.            
+
+#### Kleurenblindheid
+Sommige mensen zijn niet in staat om alle kleuren evne goed te zien. Dus voor hen is kleuren anders. Bijvoorbeeld voor sommigen kunnen niet ee onderscheid maken tussen  rood en groen. 
+Als oefening  droeg ik een geel gekleurde bril. Ik zag alleen maar geel. Op mijn website waren genoeg contrast tussen de achtegrond en de tekst en plaatjes. Maar het geld niet voor alle elementen op het website. 
+
+<img src="images/formulier-state.jpg" width="375px" alt="formulier in het default state">
+<img src="images/formulier-focus.jpg" width="375px" alt="formulier in  met dikke border in het focus state">
+als je iets op het input veld drukt of hover verandert de achtegrondkleur van de invoer veld van wit naar licht groen. Dus je trigger een active state.  Met het gele bril was de groen niet meer te zien. Dus als oplossing kan ik bij de focus state  de border van de invoer velden dikker maken  dan weet de gebruiker precies bij welk invoerveld hij is. 
 
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Concentratie problemen 
+<img src="images/concentratie-problemen.jpg" width="375px" alt="keisha met een ballon">
+Een andere oefening die ik heb gedaan is de web gebruiken terwijl ik de balon niet laat vallen. Ik kan niet eens scrollen zonder dat de balon valt. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing 1: 
+Dus na een aantal seconde van inactiviteit een stem zou de gebruiker aandacht trekken met een bericht. Bijvoorbeeld: "Keisha je was bezig met het lezen van een samenvatting". 
+Ik weet het niet of dit mogelijk is maar het is iets.  
+
+Oplossing 2:
+Meer afbeelding of andere grafische elementen gebruiken die de tekst ondersteunen. 
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
 
@@ -299,10 +324,10 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-Ik ben klaar met mijn website. Ik moet nog de kleine details zetten. Zoals commentaar. De bronnen vermelden. Voor het laast heb ik aan het docent gevraagd voor feedback. Ik vroeg wat ik nog meer kan toevoegen bij een van de twee pagina's.
+Ik ben klaar met mijn website. Ik moet nog de kleine details zetten. Zoals commentaar. De bronnen vermelden. Voor het laatst heb ik aan het docent gevraagd voor feedback. Ik vroeg wat ik nog meer kan toevoegen bij een van de twee pagina's.
 - Meer Animaties
 - Een uitgebreide formulier en die stijlen
-- De responsiveness die ik maakt verbeteren met media query.
+- De responsiveness verbeteren met media query.
 
 
 
@@ -319,9 +344,9 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- Code een beetje verzorgd maken
+- Code een beetje verzorgd maken. Ik heb allee onnodige codes weggehaald en ook meer commentaar toegevoegd. 
 - Bij de javascript  moet ik alle variabele, functions, en eventlisteners  bij elkaar zetten.
-- De gebruikers foto beter positioneren, zodat het niet op het titel blijft.
+- De gebruikers foto's beter positioneren, zodat het niet op het titel blijft.
 - Rekening houden met toegankelijkheid.
 - Px omzetten in em.
 - States toevoegen bij de side menu.
@@ -338,11 +363,52 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-### Screenshot(s)
+#### Wat goed ging 
+Ik ben klaar met het opdracht voor front-end-development. Ik heb veel geleerd de laatste weken.  Wat ik echt nuttig vond waren de animaties met css maken en positioneren. Ik heb uiteindelijk de wepaginas responsive gemaakt. Het was al een beetje responsive met flexbox maar ik heb met  media query gebruikt om de elementen te verbeteren. Verder is mijn HTML, CSS en Javascript code verzorgd met heel veel commentaar en hier en daar wat bronvermelding. Ik heb de site geopend op mijn telefoon en het werkt.
 
+- Ik heb animatie toegevoegd bij het profiel foto
+- Ik heb de active, hover en focus state vormgegeven 
+- Ik heb een formulier gemaakt in het bibliotheek pagina 
+- 
+
+
+
+
+#### Wat niet  goed ging 
+Ik wilde mijn website in dark mode maken door middel media query te gebruiken maar ik had de tijd niet. En mijn custom css property is niet helemaal compleet dus ik heb zo laat staan. Verder wilde ik ook een toggle button maken om de dark mode uit te zetten. Maar ik had ook niet genoeg tijd.
 hier screenshot(s) van je eindresultaat
+### Screenshot(s)
+#### Je bibliotheek pagina 
+#### Versie 1 
+<img src="images/bibliotheek-pagina1.jpg" width="375px" alt="Versie 1 van bibliotheek pagina">
+
+#### EindVersie 
+<img src="images/bibliotheek-pagina-2.jpg" width="375px" alt="Versie 2 van bibliotheek pagina">
+
+
+#### Detail van het boek pagina 
+#### Versie 1 
+<img src="images/detail-pagina-home.jpg" width="375px" alt="Versie 1 van detailpagina ">
+
+#### EindVersie 
+<img src="images/details-eindresultaat.jpg" width="375px" alt="Versie 2 van detailpagina">
+
+#### Je bibliotheek pagina desktop versie 
+<img src="images/desktop-bibliotheek.jpg" width="375px" alt="Desktop versie van het bibliotheek pagina ">
+
+#### Detail van het boek pagina desktop versie
+<img src="images/desktop-details.jpg" width="375px" alt="Desktop versie van het detailspagina ">
+
+#### HTML  
+<img src="images/html-code.jpg" width="375px" alt=" Screenshot van HTML code">
+
+#### CSS 
+<img src="images/css-code.jpg" width="375px" alt="Screenshot van CSS code">
+
+#### Javascript
+<img src="images/js-code.jpg" width="375px" alt="Screenshot van Javascript">
+
 
 </details>
 
@@ -363,7 +429,33 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 4. How to create a responsive header - https://www.w3schools.com/howto/howto_css_responsive_header.asp
 5. How to change tabs on Hover - https://www.w3schools.com/howto/howto_js_hover_tabs.asp
 6. Calc() - https://developer.mozilla.org/en-US/docs/Web/CSS/calc()
-7. css RGBA values -
-8.  Iconen: https://css.gg/
+7. Adress element -  https://stackoverflow.com/questions/7290504/which-html5-tag-should-i-use-to-mark-up-an-author-s-name
+8.  Iconen website : https://css.gg/
+9. Pixels omzetten in em - https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+10. Lettertype Barlow - https://fonts.google.com/specimen/Barlow
+
+Iconen:
+1. Pijlen rechts - https://css.gg/arrow-right
+2. Ogen - https://css.gg/eye
+3. Hart -  https://css.gg/heart
+4. Lijst -  https://css.gg/layout-list
+5. Klok - https://css.gg/time 
+6. Medaille -  https://css.gg/trophy
+7. Plus - https://css.gg/math-plus
+8. Vlag - https://css.gg/flag-alt
+9. readme - https://css.gg/readme
+
+
+Afbeelding boekenkaft uit wattpad in bibliotheek pagina:
+1. The rebirth of an ill-fated consort - https://img.wattpad.com/cover/156454935-512-k537006.jpg
+2. The contract - https://img.wattpad.com/cover/171288871-512-k852710.jpg
+3. Her sister's Fiance - https://img.wattpad.com/cover/80735354-512-k933380.jpg
+4. Kingly Desire -  https://img.wattpad.com/cover/149793898-512-k92662.jpg
+5. The unfavorite concubine - https://img.wattpad.com/cover/126395472-256-k762502.jpg
+
+Afbeelding boekenkaft uit wattpad in details van het boek pagina:
+1. The Play - https://img.wattpad.com/cover/195529118-256-k504456.jpg
+2. The Tudor Witch - https://img.wattpad.com/cover/4418363-256-k979864.jpg
+3. Cannibalistic - https://img.wattpad.com/cover/164517588-256-k161004.jpg 
 
 </details>
