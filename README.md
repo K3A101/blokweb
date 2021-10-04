@@ -77,14 +77,17 @@ noodzakelijk zijn voor maken van het HTML pagina.
 Hier is mijn eerste versie van het breakdownschets. 
 
 ##### Overzichtpagina van Wattpad.
-Het overzichtpagina  die ik wil nameken  is het bibliotheek pagina, waar gebruikers hun boeken kan opslagen  en terugvinden. 
-Deze pagina bevat uit een navigatie menus, met afbeeldingen die alllemaal links zijn. 
 <img src="images/library.jpg" width="375px" alt="breakdown van de hele pagina">
 <img src="images/breakdown-schets-hele-pagina.png" width="375px" alt="breakdown van de hele pagina">
 
+Het overzichtpagina  die ik wil nameken  is het bibliotheek pagina, waar gebruikers hun boeken kan opslagen  en terugvinden. 
+Deze pagina bevat uit een navigatie menus, met afbeeldingen die alllemaal links zijn. 
+
+
 ##### Detailpagina van Wattpad.
-De andere pagina bevat alle detail van het boek  die veel secties bevatten. 
 <img src="images/detailpagina-schets.jpg" width="375px" alt="breakdown van de hele pagina">
+De andere pagina bevat alle detail van het boek  die veel secties bevatten. 
+
 
 ### dynamisch deel (bijv menu): 
 <img src="images/breakdownschets-menu.png" width="375px" alt="breakdown van een dynamisch deel">
@@ -108,10 +111,11 @@ gekozen website. Ik denk dat  er meer  details toegevoegd kan worden. Bijvoorbee
 
 Er was een moment waar ik opnieuw begon want ik wilde het een beetje responsive maken. 
 Hier zijn de screenshot van de voortgang van de paginas.
-Pagina 1:
+
+#### Pagina 1:
 <img src="images/detailpagina-home.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
-Pagina 2:
+#### Pagina 2:
 <img src="images/biblotheek-pagina1.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 ### Wat goed ging.
@@ -175,13 +179,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
  ### Wat niet goed ging 
  - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas. Maar het is gelukt door een conditie toe te voegen in die javascript.
+
  <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
 
  - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
  - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu en ook de h1
 
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
  ### Mijn punten:
  - Feedback over het lay-out.
@@ -270,8 +274,9 @@ Toen ik die bril draagt kon ik niks meer zien. De letters waren niet meer te lez
 Oplossing 1:
 Als een oplossing kan de gebruiker een screen reader gebruiken om de content  te horen. Dus alle links moet goed beschreven worden. Alle afbeeldingen moeten een goede alternatieve tekst bevatten. 
 
-Oplsossing 2:
+
 <img src="images/samenvating.jpg" width="375px" alt="formulier in het default state">
+Oplsossing 2:
 Andere oplossing is om alle tekst groter te maken. Op mijn website kan het samenvatting van het boek groter zijn met  een grote regelafstand.
 
 
@@ -290,12 +295,12 @@ Oplossing 3:
 Een voice  ai waar de gebruikers commando geven aan de website. Bijvoorbeeld "wattpad open -titel van het boek-" Met dat commando wordt de gekozen boek geopend.            
 
 #### Kleurenblindheid
-Sommige mensen zijn niet in staat om alle kleuren evne goed te zien. Dus voor hen is kleuren anders. Bijvoorbeeld voor sommigen kunnen niet ee onderscheid maken tussen  rood en groen. 
-Als oefening  droeg ik een geel gekleurde bril. Ik zag alleen maar geel. Op mijn website waren genoeg contrast tussen de achtegrond en de tekst en plaatjes. Maar het geld niet voor alle elementen op het website. 
-
 <img src="images/formulier-state.jpg" width="375px" alt="formulier in het default state">
 <img src="images/formulier-focus.jpg" width="375px" alt="formulier in  met dikke border in het focus state">
+Sommige mensen zijn niet in staat om alle kleuren evne goed te zien. Dus voor hen is kleuren anders. Bijvoorbeeld voor sommigen kunnen niet ee onderscheid maken tussen  rood en groen. 
+Als oefening  droeg ik een geel gekleurde bril. Ik zag alleen maar geel. Op mijn website waren genoeg contrast tussen de achtegrond en de tekst en plaatjes. Maar het geld niet voor alle elementen op het website. 
 als je iets op het input veld drukt of hover verandert de achtegrondkleur van de invoer veld van wit naar licht groen. Dus je trigger een active state.  Met het gele bril was de groen niet meer te zien. Dus als oplossing kan ik bij de focus state  de border van de invoer velden dikker maken  dan weet de gebruiker precies bij welk invoerveld hij is. 
+
 
 
 #### Concentratie problemen 
@@ -308,9 +313,6 @@ Ik weet het niet of dit mogelijk is maar het is iets.
 
 Oplossing 2:
 Meer afbeelding of andere grafische elementen gebruiken die de tekst ondersteunen. 
-
-
-
 
 </details>
 
@@ -389,7 +391,7 @@ hier screenshot(s) van je eindresultaat
 
 #### Detail van het boek pagina 
 #### Versie 1 
-<img src="images/detail-pagina-home.jpg" width="375px" alt="Versie 1 van detailpagina ">
+<img src="images/detailpagina-home.jpg" width="375px" alt="Versie 1 van detailpagina ">
 
 #### EindVersie 
 <img src="images/details-eindresultaat.jpg" width="375px" alt="Versie 2 van detailpagina">
