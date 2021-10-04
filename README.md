@@ -178,9 +178,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
  ### Wat niet goed ging 
+ <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
  - Ik had een beetje moeite met  javascript voor twee HTML pagina's. IK had codes voor elk paginas. Maar het is gelukt door een conditie toe te voegen in die javascript.
 
- <img src="images/js-conditie.jpg" width="375px" alt="formulier in het default state">
 
  - Ik vind vormgeving een beetje chaotisch en te veel kleurlijk. Ik wil het een beetje minimalistisch maken.
  - Ik weet nog niet waar precies een animatie geschikt is. Tot nu toe is de animatie bij de sidemenu en ook de h1
